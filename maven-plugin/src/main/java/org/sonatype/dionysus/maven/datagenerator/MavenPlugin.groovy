@@ -71,10 +71,12 @@ class MavenPlugin
   }
 
   private void fixHtml(final JSONObject object, final String key) {
-    def value = object.getString(key)
-    def fixed = JavadocHelper.cleanDescription(value)
-    if (fixed) {
-      object.put(key, fixed)
+    if (object.has(key)) {
+      def value = object.getString(key)
+      def fixed = JavadocHelper.cleanDescription(value)
+      if (fixed) {
+        object.put(key, fixed)
+      }
     }
   }
 }

@@ -14,7 +14,7 @@
 -->
 # Dionysus Support
 
-TODO
+Support for using Dionysus [Hugo](https://gohugo.io) theme. 
 
 ## Requirements
 
@@ -26,3 +26,13 @@ TODO
 ## Hugo
 
 [Maven plugin](maven-plugin) includes binary releases of [Hugo](https://gohugo.io), which are licensed under ASL-2.
+
+## Site
+
+### Building
+
+    ./mvnw clean install && ./mvnw -Pdionysus dionysus:build
+    
+### Publishing
+
+    ./mvnw -Pdionysus dionysus:publish
