@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html id="site-root" lang="{{ $.Site.LanguageCode | default `en` }}">
+<head>
+  {{ partial "head/main.html" . }}
+
+  <!-- Expose some configuration from Hugo to javascript -->
+  <script>
+    var site_BaseURL = "{{ $.Site.BaseURL }}";
+    var site_BasePath = "{{ $.Site.BaseURL | relURL }}";
+  </script>
+
+  {{ block "head-extra" . }}{{ end }}
+</head>
+<body id="site-body">
+  <wrapper id="site-wrapper">
+    {{ partial "header/main.html" . }}
+    <main id="site-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer/main.html" . }}
+    {{ partial "footer/scripts.html" . }}
+  </wrapper>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{{ $context := . }}
+{{ $plugin := index (index .Site.Data.maven.plugin (.Get "plugin")) "plugin" }}
+{{ $goalName := .Get "goal" }}
+{{ with $plugin }}
+
+{{ $xml := printf `<project>
+  <build>
+    <!-- plugin management -->
+    <pluginMangement>
+      <plugins>
+        <plugin>
+          <groupId>%s</groupId>
+          <artifactId>%s</artifactId>
+          <version>%s</version>
+        </plugin>
+      </plugins>
+    </pluginMangement>
+
+    <!-- plugin execution -->
+    <plugins>
+      <plugin>
+        <groupId>%s</groupId>
+        <artifactId>%s</artifactId>
+        <version>%s</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+` $plugin.groupId $plugin.artifactId $plugin.version $plugin.groupId $plugin.artifactId $plugin.version}}
+
+<div class="mavenplugin-usage">
+{{ highlight $xml "xml" "" }}
+</div>
+
+{{ end }}

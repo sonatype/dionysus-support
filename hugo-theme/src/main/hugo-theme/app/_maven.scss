@@ -1,0 +1,41 @@
+//
+// Maven support
+//
+
+.maven-modules {
+  .table {
+    @extend .table-striped;
+  }
+}
+
+.maven-dependency {
+  .dependency {
+    // empty
+  }
+  .dependency-management {
+    // empty
+  }
+}
+
+.maven-licenses {
+  .table {
+    @extend .table-striped;
+  }
+
+  .license-details {
+    .license-detail {
+       @extend .border-top, .pt-3;
+
+      .name {
+        // empty
+      }
+
+      .content {
+        @extend .card, .bg-light;
+        pre {
+          @extend .card-body, .text-monospace;
+        }
+      }
+    }
+  }
+}

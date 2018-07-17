@@ -1,0 +1,12 @@
+<table class="page-list">
+{{ range . }}
+  <tr>
+    <td class="glyph">
+      {{ if .Params.glyph }}<i class="{{ .Params.glyph }}"></i>{{ end }}
+    </td>
+    <td class="title">
+      <a href="{{ .URL }}">{{ .Title }}</a>
+    </td>
+  </tr>
+{{ end }}
+</table>

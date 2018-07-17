@@ -1,0 +1,31 @@
+{
+  "name": "dionysus-hugo-theme",
+  "description": "Dionysus Hugo Theme",
+  "private": true,
+  "author": "Sonatype, Inc.",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "build": "brunch build --production",
+    "build-dev": "brunch build"
+  },
+  "dependencies": {
+    "after-brunch": "^0.0.5",
+    "fuse.js": "^3.2.1",
+    "mark.js": "^8.11.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0",
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "4",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "copycat-brunch": "^1.1.0",
+    "jquery": "3",
+    "sass-brunch": "^2.10.4",
+    "uglify-js-brunch": "^2"
+  }
+}

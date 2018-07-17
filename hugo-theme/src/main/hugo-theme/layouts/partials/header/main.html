@@ -1,0 +1,52 @@
+<!--suppress HtmlUnknownTarget -->
+<header id="site-header">
+  <nav id="site-topnav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ `/` | relURL }}">
+        <img class="d-inline-block align-top mr-2" src="{{ `/images/sonatype-dark-32x32.png` | relURL }}" width="32" height="32" alt="">
+        {{ $.Site.Title }}
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-toggle">
+        <ul class="navbar-nav mr-auto">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.topnav }}
+            <li class="nav-item">
+              <a class="nav-link{{if or ($currentPage.IsMenuCurrent `topnav` .) ($currentPage.HasMenuCurrent `topnav` .) }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+
+        <form class="form-inline d-flex flex-nowrap" action="{{ `search` | absURL }}" method="get">
+          <div class="input-group" data-toggle="tooltip" data-placement="bottom" title="Search">
+            <input class="form-control border-right-0 border-dark bg-dark text-light" type="search" name="q"
+                   placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+
+          {{/*
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle ml-2 dropdown-tooltip" type="button"
+                    id="userDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    data-placement="bottom" title="Anonymous">
+              <i class="far fa-user mr-2"></i>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdownMenuButton">
+              <a class="dropdown-item" href="#signin"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#register"><i class="fas fa-user-plus"></i> Register</a>
+          </div>
+          */}}
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>

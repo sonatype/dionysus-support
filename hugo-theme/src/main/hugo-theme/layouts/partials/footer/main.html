@@ -1,0 +1,24 @@
+<!--suppress HtmlUnknownTarget -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="section-brand">
+        <h5 class="section-title"><img src="{{ `/images/sonatype-24x24.png` | relURL }}" width="24" height="24" alt=""></h5>
+        <small class="section-entry">&copy; {{ .Site.Params.inceptionYear }}-present, Sonatype Inc.</small>
+      </div>
+
+      {{ range .Site.Menus.footer_sections }}
+        <div class="section">
+          <h5 class="section-title">{{ .Name }}</h5>
+          <ul class="section-list">
+            {{ range .Children }}
+            <li><a class="section-entry" href="{{ .URL }}">
+              {{/* If menu name is "About" use site title instead */}}
+              {{ if eq .Name "About" }}{{ $.Site.Title }}{{ else }}{{ .Name }}{{ end }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</footer>

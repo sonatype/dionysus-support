@@ -1,0 +1,76 @@
+//
+// Helpers
+//
+
+// adjust anchors to be relative to the navbar offset
+a.anchor {
+  display: block;
+  position: relative;
+  top: -$navbar-offset;
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+.monospace {
+  font-family: monospace !important;
+}
+
+.navbar-brand {
+  font-family: $font-brand !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.dropdown-tooltip {
+  // custom handling for dropdown tooltips
+}
+
+.missing-data {
+  @extend .fas, .text-muted;
+
+  &:before {
+    content: fa-content($fa-var-ban);
+  }
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.table-header-nowrap {
+  table {
+    thead {
+      @extend .whitespace-nowrap;
+    }
+  }
+}
+
+// command.html
+.command {
+  @extend .card, .bg-black, .mb-3;
+
+  .body {
+    @extend .card-body;
+  }
+
+  .text {
+    @extend .card-text, .text-light, .text-monospace;
+  }
+}
+
+// command-output.html
+.command-output {
+  @extend .card, .bg-light, .mb-3;
+
+  .body {
+    @extend .card-body;
+  }
+
+  .text {
+    @extend .card-text, .text-dark, .text-monospace;
+  }
+}

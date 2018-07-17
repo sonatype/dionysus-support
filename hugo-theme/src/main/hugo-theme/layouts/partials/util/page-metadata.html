@@ -1,0 +1,39 @@
+<table class="page-metadata">
+  <tr>
+    <td class="key">Created</td>
+    <td>{{ dateFormat "Monday, January 2, 2006" .Date }}</td>
+  </tr>
+
+  {{ if .Params.tags }}
+    <tr>
+      <td class="key">Tags</td>
+      <td class="value">
+      {{ range .Params.tags }}
+        <a href="{{ `/tags/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+
+  {{ if .Params.categories }}
+    <tr>
+      <td class="key">Categories</td>
+      <td class="value">
+      {{ range .Params.categories }}
+        <a href="{{ `/categories/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+
+  {{ if .Params.moods }}
+    <tr>
+      <td class="key">Moods</td>
+      <td class="value">
+      {{ range .Params.moods }}
+        <a href="{{ `/moods/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+</table>

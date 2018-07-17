@@ -1,0 +1,25 @@
+{{ $context := . }}
+{{ $modules := .Site.Data.maven.modules }}
+<div class="maven-modules">
+  <table class="table">
+    <caption>{{ len $modules }} modules</caption>
+    <thead>
+      <tr>
+        <th scope="col">Group ID</th>
+        <th scope="col">Artifact ID</th>
+        <th scope="col">Version</th>
+        <th scope="col">Packaging</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $modules }}
+        <tr>
+          <td class="groupId">{{ .groupId }}</td>
+          <td class="artifactId">{{ .artifactId }}</td>
+          <td class="version">{{ .version }}</td>
+          <td class="packaging">{{ .packaging }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>

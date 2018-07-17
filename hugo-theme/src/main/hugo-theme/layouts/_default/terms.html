@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $glyph := .Params.glyph }}
+{{ $glyph_child := .Params.glyph_child }}
+  {{/* Custom page-description to use custom title and glyph */}}
+  <div id="page-description">
+    <h1 class="title">{{ if $glyph }}<i class="{{ $glyph }}"></i> {{ end }}{{ .Title }}</h1>
+    <p class="subtitle">{{ len .Data.Terms }} {{ .Data.Plural }}</p>
+  </div>
+
+  {{ .Content }}
+
+  {{ range $key, $value := .Data.Terms }}
+    <div class="col pb-3">
+      <h2>
+        <a href="{{ `/` | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">
+        {{ if $glyph_child }}<i class="{{ $glyph_child }}"></i> {{ end }}{{ $key }}</a>
+      </h2>
+
+    <div class="pl-3">
+      {{ partial "util/page-list.html" $value.Pages }}
+    </div>
+    </div>
+  {{ end }}
+{{ end }}

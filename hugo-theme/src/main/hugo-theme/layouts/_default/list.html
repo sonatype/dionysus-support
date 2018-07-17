@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ partial "util/page-description.html" . }}
+
+{{ .Content }}
+
+{{ partial "util/page-list.html" .Pages }}
+{{ end }}

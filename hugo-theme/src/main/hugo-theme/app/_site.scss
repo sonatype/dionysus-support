@@ -1,0 +1,76 @@
+//
+// Site framework
+//
+
+#site-root {
+  position: relative;
+  min-height: 100%;
+}
+
+#site-body {
+  min-height: 100vh;
+  font-family: $font-stack !important;
+}
+
+#site-wrapper {
+  @extend .d-flex, .flex-column;
+  min-height: 100vh;
+}
+
+//
+// Site topnav
+//
+
+#site-topnav {
+  @extend .navbar, .fixed-top, .navbar-expand-lg, .navbar-dark, .bg-black;
+}
+
+//
+// Site content
+//
+
+#site-content {
+  @extend .container, .flex-fill;
+
+  // adjust body for navbar fixed-top
+  margin-top: $navbar-offset;
+  flex: 1;
+}
+
+//
+// Site footer
+//
+
+#site-footer {
+  @extend .container-fluid, .py-5, .mt-3, .bg-light;
+
+  // section for product branding
+  .section-brand {
+    @extend .col-12, .col-md;
+
+    .section-title {
+      // empty
+    }
+
+    .section-entry {
+      @extend .d-block, .mb-3, .text-muted;
+    }
+  }
+
+  // section for all other content
+  .section {
+    @extend .col-6, .col-md;
+
+    .section-title {
+      // empty
+    }
+
+    .section-list {
+      @extend .list-unstyled;
+    }
+
+    .section-entry {
+      @extend .text-muted;
+    }
+  }
+}

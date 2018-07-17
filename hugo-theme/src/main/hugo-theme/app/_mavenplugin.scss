@@ -1,0 +1,74 @@
+//
+// Mavenplugin support
+//
+
+.mavenplugin-goals {
+  .table {
+    @extend .table-striped;
+  }
+  .goal-name {
+    // empty
+  }
+  .goal-description {
+    // empty
+  }
+}
+
+.mavenplugin-usage {
+  // empty
+}
+
+.mavenplugin-goal {
+  .goal-description {
+    @extend .lead;
+  }
+
+  .goal-metadata {
+    @extend .row;
+
+    .name {
+      @extend .col-sm-2;
+    }
+
+    .value {
+      @extend .col-sm-9;
+    }
+  }
+
+  .parameters-table {
+    @extend .table, .table-striped;
+
+    .name {
+      white-space: nowrap;
+    }
+    .type {
+      @extend .monospace;
+    }
+    .since {
+      @extend .monospace;
+    }
+    .description {
+      // empty
+    }
+  }
+
+  .parameter-description {
+    // empty
+  }
+
+  .parameter-detail {
+    @extend .border-top, .pt-3;
+  }
+
+  .parameter-metadata {
+    @extend .row;
+
+    .name {
+      @extend .col-sm-2;
+    }
+
+    .value {
+      @extend .col-sm-9;
+    }
+  }
+}

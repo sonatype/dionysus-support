@@ -1,0 +1,6 @@
+<div id="page-description">
+  <h1 class="title">{{ if isset .Params "glyph" }}<i class="{{ .Params.glyph }}"></i> {{ end }}{{ .Title }}</h1>
+  {{ if isset .Params "subtitle" }}
+    <p class="subtitle">{{ .Params.subtitle }}</p>
+  {{ end }}
+</div>

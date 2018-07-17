@@ -20,6 +20,9 @@ TODO
 
 * [Apache Maven](https://maven.apache.org/) 3.3+ (prefer to use included `mvnw`)
 * JDK 7+ (10 is **NOT** supported)
+* [NodeJS](https://nodejs.org/en/download/); version 8+
+* [Yarn](https://yarnpkg.com/en/docs/install); ensure `yarn global bin` location is on `$PATH` 
+* [Brunch](https://brunch.io/); `yarn global add brunch`
 
 ## Hugo
 

@@ -1,0 +1,15 @@
+---
+name: Dionysys Hugo Theme
+license: ASL2
+licenselink: https://github.com/jdillon/dionysus-hugo-theme/blob/master/LICENSE
+description: Hugo theme for project sites
+homepage: https://github.com/jdillon/dionysus-hugo-theme
+tags:
+  - sonatype
+  - project-site
+features: []
+min_version: 0.41
+
+author:
+  name: Sonatype, Inc.
+  homepage: https://sonatype.com

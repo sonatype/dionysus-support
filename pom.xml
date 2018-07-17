@@ -66,6 +66,7 @@
 
   <modules>
     <module>maven-plugin</module>
+    <module>hugo-theme</module>
   </modules>
 
 </project>

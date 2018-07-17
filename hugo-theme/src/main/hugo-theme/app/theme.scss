@@ -1,0 +1,28 @@
+//
+// Bootstrap
+//
+
+$enable-rounded: true;
+//noinspection CssUnknownTarget
+@import 'bootstrap';
+
+//
+// Fontawesome
+//
+
+$fa-font-path: 'fonts';
+//noinspection CssUnknownTarget
+@import 'fontawesome', 'fa-regular', 'fa-solid', 'fa-brands';
+
+//
+// Site
+//
+
+@import 'variables';
+@import 'site';
+@import 'page';
+@import 'helper';
+@import 'hugo';
+@import 'search';
+@import 'maven';
+@import 'mavenplugin';

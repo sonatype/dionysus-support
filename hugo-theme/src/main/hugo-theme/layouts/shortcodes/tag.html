@@ -1,0 +1,5 @@
+{{ $type := .Get "type" | default "div" }}
+{{ $class := .Get "class" }}
+{{ safeHTML (printf `<%s class="%s">` $type $class) }}
+  {{ .Inner }}
+{{ safeHTML (printf "</%s>" $type) }}

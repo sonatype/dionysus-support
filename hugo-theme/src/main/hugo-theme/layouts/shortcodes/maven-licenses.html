@@ -1,0 +1,33 @@
+{{ $context := . }}
+{{ $licenses := .Site.Data.maven.licenses.licenses }}
+<div class="maven-licenses">
+  <table class="table">
+    <caption>{{ len $licenses }} licenses</caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $licenses }}
+        <tr>
+          <td class="name">{{ .name }}</td>
+          <td class="url"><a href="{{ .url }}">{{ .url }}</a></td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <div class="license-details">
+    {{ range $licenses }}
+      {{ if .content }}
+        <div class="license-detail">
+          <h3 class="name">{{ .name }}</h3>
+          <div class="content">
+          <pre>{{ .content }}</pre>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>

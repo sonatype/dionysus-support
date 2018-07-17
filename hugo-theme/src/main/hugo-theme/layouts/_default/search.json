@@ -1,0 +1,6 @@
+{{/* Generate search index JSON from site pages */}}
+{{- $.Scratch.Add "search-index" slice -}}
+{{- range $.Site.RegularPages -}}
+  {{- $.Scratch.Add "search-index" (dict "title" .Title "subtitle" .Params.subtitle "glyph" .Params.glyph "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+{{- end -}}
+{{- $.Scratch.Get "search-index" | jsonify -}}

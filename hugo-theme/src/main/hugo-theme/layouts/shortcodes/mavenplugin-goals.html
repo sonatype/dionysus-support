@@ -1,0 +1,26 @@
+{{ $context := . }}
+{{ $plugin := index (index .Site.Data.maven.plugin (.Get "plugin")) "plugin" }}
+{{ $pagePrefix := .Get "page-prefix" | default $plugin.goalPrefix }}
+{{ with $plugin }}
+
+<div class="mavenplugin-goals">
+  <table class="table">
+    <caption>{{ len .mojos.mojo }} goals</caption>
+    <thead>
+      <tr>
+        <th scope="col">Goal</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .mojos.mojo }}
+      <tr>
+        <td class="goal-name"><a href="{{ printf `%s-%s` $pagePrefix .goal }}"><i class="fas fa-bullseye"></i> {{ $plugin.goalPrefix }}:{{ .goal }}</a></td>
+        <td class="goal-description">{{ safeHTML (.description | default `<i class="fas fa-ban"></i>`) }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
+{{ end }}

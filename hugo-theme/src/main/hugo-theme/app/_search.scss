@@ -1,0 +1,52 @@
+//
+// Search
+//
+
+#search-results {
+  @extend .mt-4;
+}
+
+.search-result {
+  @extend .mb-5;
+
+  .title {
+    // empty
+  }
+
+  .subtitle {
+    @extend .text-muted;
+  }
+
+  .snippet {
+    // empty
+  }
+
+  mark {
+    //@extend .bg-warning, .text-dark;
+    background-color: #fef3a1;
+  }
+
+  .metadata {
+    @extend .table-sm;
+
+    .key {
+      @extend .font-weight-bold;
+    }
+
+    .value {
+      // empty
+    }
+  }
+}
+
+.search-non-match {
+  @extend .text-muted;
+
+  i {
+    @extend .fas;
+
+    &:before {
+      content: fa-content($fa-var-exclamation-triangle);
+    }
+  }
+}

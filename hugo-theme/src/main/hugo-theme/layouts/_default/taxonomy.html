@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $taxonomy := .Site.GetPage "taxonomy" .Data.Plural }}
+{{ $glyph := $taxonomy.Params.glyph_child }}
+  {{/* Custom page-description to use custom title and glyph */}}
+  <div id="page-description">
+    <h1 class="title">{{ if $glyph }}<i class="{{ $glyph }}"></i> {{ end }}{{ .Title }}</h1>
+    <p class="subtitle">{{ len .Pages }} pages with {{ .Title }} {{ .Data.Plural }}</p>
+  </div>
+
+  {{ .Content }}
+
+  {{ partial "util/page-list.html" .Pages }}
+{{ end }}

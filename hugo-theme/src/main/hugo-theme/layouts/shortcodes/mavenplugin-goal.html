@@ -1,0 +1,102 @@
+{{ $context := . }}
+{{ $plugin := index (index .Site.Data.maven.plugin (.Get "plugin")) "plugin" }}
+{{ $goalName := .Get "goal" }}
+{{ $goal := index (first 1 (where $plugin.mojos.mojo "goal" $goalName)) 0 }}
+{{ with $goal }}
+<div class="mavenplugin-goal">
+  {{ if $goal.description }}
+  <p class="goal-description">
+    {{ safeHTML $goal.description }}
+  </p>
+  {{ end }}
+
+  <dl class="goal-metadata">
+    <dt class="name">Full name</dt>
+    <dd class="value monospace">{{ $plugin.name }}:{{ $plugin.version }}:{{ $goal.goal }}</dd>
+
+    {{ if $goal.since }}
+    <dt class="name">Since</dt>
+    <dd class="value monospace">{{ $goal.since }}</dd>
+    {{ end }}
+
+    {{ if $goal.phase }}
+    <dt class="name">Phase</dt>
+    <dd class="value monospace">{{ $goal.phase }}</dd>
+    {{ end }}
+
+    <dt class="name">Requires Project</dt>
+    <dd class="value monospace">{{ $goal.requiresProject }}</dd>
+
+    <dt class="name">Requires Online</dt>
+    <dd class="value monospace">{{ $goal.requiresOnline }}</dd>
+
+    <dt class="name">Requires Direct Invocation</dt>
+    <dd class="value monospace">{{ $goal.requiresDirectInvocation }}</dd>
+
+    <dt class="name">Thread-safe</dt>
+    <dd class="value monospace">{{ $goal.threadSafe }}</dd>
+  </dl>
+
+  <h3>Parameters</h3>
+
+  {{ $parameters := where .parameters.parameter "editable" true }}
+  <table class="parameters-table">
+    <caption>{{ len $parameters }} parameters</caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Since</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $parameters }}
+      <tr>
+        <td class="name"><a href="#{{ .name }}"><i class="fas fa-code"></i> {{ .name }}</a></td>
+        <td class="type">{{ .type }}</td>
+        <td class="since">{{ .since | default (safeHTML `<i class="missing-data"></i>`) }}</td>
+        <td class="description">{{ safeHTML .description }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  {{ range $parameters }}
+  {{ $configuration := index ((index $goal.configuration .name) | default (dict)) }}
+  <div class="parameter-detail">
+    <a class="anchor" name="{{ .name }}"></a>
+    <h4><i class="fas fa-code"></i> {{ .name }}</h4>
+
+    {{ if .description }}
+    <p class="parameter-description">
+      {{ safeHTML .description }}
+    </p>
+    {{ end }}
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">{{ .type }}</dd>
+
+      {{ if .since }}
+      <dt class="name">Since</dt>
+      <dd class="value monospace">{{ .since }}</dd>
+      {{ end }}
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">{{ .required }}</dd>
+
+      {{ if isset $configuration "default-value" }}
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">{{ index $configuration "default-value" }}</dd>
+      {{ end }}
+
+      {{ if isset $configuration "content" }}
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">{{ index $configuration "content" }}</dd>
+      {{ end }}
+    </dl>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

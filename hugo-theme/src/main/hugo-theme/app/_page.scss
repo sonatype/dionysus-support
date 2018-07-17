@@ -1,0 +1,65 @@
+//
+// Page description
+//
+
+#page-description {
+  .title {
+    font-weight: bold;
+  }
+
+  .subtitle {
+    @extend .text-muted;
+  }
+}
+
+//
+// Page error
+//
+
+#page-error {
+  @extend #page-description;
+
+  .title {
+    @extend .text-danger;
+  }
+
+  .glyph {
+    @extend .fas;
+
+    &:before {
+      content: fa-content($fa-var-exclamation-circle);
+    }
+  }
+}
+
+//
+// Page metadata
+//
+
+.page-metadata {
+  @extend .table-sm, .table-striped;
+
+  .key {
+    @extend .font-weight-bold;
+  }
+
+  .value {
+    // empty
+  }
+}
+
+//
+// Page list
+//
+
+.page-list {
+  @extend .table-sm;
+
+  .glyph {
+    // empty
+  }
+
+  .title {
+    // empty
+  }
+}

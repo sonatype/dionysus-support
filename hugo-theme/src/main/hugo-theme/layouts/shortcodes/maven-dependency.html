@@ -1,0 +1,37 @@
+{{ $context := . }}
+{{ $skipDm := .Get "skip-dm" }}
+{{ $skipD := .Get "skip-d" }}
+{{ $module := index (index .Site.Data.maven.pom (.Get "module")) "project" }}
+{{ with $module }}
+
+<div class="maven-dependency">
+  {{ if not $skipDm }}
+  {{ $dm := printf `<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>%s</groupId>
+      <artifactId>%s</artifactId>
+      <version>%s</version>
+    </dependency>
+  </dependencies>
+</dependencyManagement>` $module.groupId $module.artifactId $module.version }}
+
+  <div class="dependency-management">
+    {{ highlight $dm "xml" "" }}
+  </div>
+  {{ end }}
+
+  {{ if not $skipD }}
+  {{ $d := printf `<dependency>
+  <groupId>%s</groupId>
+  <artifactId>%s</artifactId>
+  <version>%s</version>
+</dependency>` $module.groupId $module.artifactId $module.version }}
+
+  <div class="dependency">
+    {{ highlight $d "xml" "" }}
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}
