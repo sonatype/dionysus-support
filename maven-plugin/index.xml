@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maven Plugin on Dionysus Support</title>
+    <link>https://jdillon.github.io/dionysus-support/maven-plugin/</link>
+    <description>Recent content in Maven Plugin on Dionysus Support</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jdillon.github.io/dionysus-support/maven-plugin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>dionysus:build</title>
+      <link>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-build/</guid>
+      <description>Full name org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:build Requires Project true Requires Online false Requires Direct Invocation true Thread-safe false  Parameters 13 parameters   Name Type Since Description      collectData boolean      generateData boolean      generateHugo boolean      generateMaven boolean      hugoData java.io.File      hugoDir java.io.File      hugoExecutable java.</description>
+    </item>
+    
+    <item>
+      <title>dionysus:generate-data</title>
+      <link>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-generate-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-generate-data/</guid>
+      <description> Full name org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:generate-data Phase prepare-package Requires Project true Requires Online false Requires Direct Invocation false Thread-safe false  Parameters 1 parameters   Name Type Since Description      generators java.util.List        generators Type java.util.List Required true    </description>
+    </item>
+    
+    <item>
+      <title>dionysus:help</title>
+      <link>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-help/</guid>
+      <description>Display help information on dionysus-maven-plugin.
+Call mvn dionysus:help -Ddetail=true -Dgoal=&amp;lt;goal-name&amp;gt; to display parameter details. Full name org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:help Requires Project false Requires Online false Requires Direct Invocation false Thread-safe true  Parameters 4 parameters   Name Type Since Description      detail boolean  If true, display all settable properties for each goal.    goal java.lang.String  The name of the goal for which to show help.</description>
+    </item>
+    
+    <item>
+      <title>dionysus:prepare-branch</title>
+      <link>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-prepare-branch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-prepare-branch/</guid>
+      <description>Full name org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:prepare-branch Requires Project true Requires Online false Requires Direct Invocation true Thread-safe false  Parameters 4 parameters   Name Type Since Description      checkoutDir java.io.File      dryRun boolean      gitBranch java.lang.String      gitExecutable java.lang.String        checkoutDir Type java.io.File Required true Default Value ${project.build.directory}/prepare-checkout User Property ${dionysus.</description>
+    </item>
+    
+    <item>
+      <title>dionysus:publish</title>
+      <link>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-publish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-publish/</guid>
+      <description>Full name org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:publish Requires Project true Requires Online false Requires Direct Invocation true Thread-safe false  Parameters 7 parameters   Name Type Since Description      checkoutDir java.io.File      dryRun boolean      gitBranch java.lang.String      gitExecutable java.lang.String      hugoPublicDir java.io.File      mavenSitePrefix java.lang.String      siteDir java.</description>
+    </item>
+    
+  </channel>
+</rss>

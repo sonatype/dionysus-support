@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/tags/dionysus-maven-plugin/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/license/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/categories/maven/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/categories/maven-plugin/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/search/</loc>
+    <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-generate-data/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-help/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-prepare-branch/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-publish/</loc>
+  </url>
+  
+</urlset>

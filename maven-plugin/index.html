@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html id="site-root" lang="en-us">
+<head>
+  
+<meta charset="UTF-8"/>
+<meta name="author" content="Sonatype, Inc."/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Maven Plugin &ndash; Dionysus Support</title>
+
+<link rel="shortcut icon" href="/dionysus-support/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/dionysus-support/favicon.ico"/>
+<link rel="icon" type="image/png" href="/dionysus-support/images/favicon-16x16.png" sizes="16x16"/>
+<link rel="icon" type="image/png" href="/dionysus-support/images/favicon-32x32.png" sizes="32x32"/>
+
+<link rel="stylesheet" href="/dionysus-support/theme.css">
+
+
+  
+  <script>
+    var site_BaseURL = "https:\/\/jdillon.github.io\/dionysus-support\/";
+    var site_BasePath = "\/dionysus-support";
+  </script>
+
+  
+</head>
+<body id="site-body">
+  <wrapper id="site-wrapper">
+    
+<header id="site-header">
+  <nav id="site-topnav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/dionysus-support/">
+        <img class="d-inline-block align-top mr-2" src="/dionysus-support/images/sonatype-dark-32x32.png" width="32" height="32" alt="">
+        Dionysus Support
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-toggle">
+        <ul class="navbar-nav mr-auto">
+          
+          
+            <li class="nav-item">
+              <a class="nav-link active" href="/dionysus-support/maven-plugin/" title="Maven Plugin">Maven Plugin</a>
+            </li>
+          
+        </ul>
+
+        <form class="form-inline d-flex flex-nowrap" action="https://jdillon.github.io/dionysus-support/search" method="get">
+          <div class="input-group" data-toggle="tooltip" data-placement="bottom" title="Search">
+            <input class="form-control border-right-0 border-dark bg-dark text-light" type="search" name="q"
+                   placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+    <main id="site-content">
+      
+<div id="page-description">
+  <h1 class="title"><i class="fas fa-puzzle-piece"></i> Maven Plugin</h1>
+  
+    <p class="subtitle">dionysus-maven-plugin</p>
+  
+</div>
+
+
+
+
+
+<div class="lead">
+  <p>Automate Maven project site generation for Github Pages.</p>
+
+</div>
+
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+<li><a href="http://java.oracle.com">Java</a> 7+ (version 10 is <strong>NOT</strong> supported)</li>
+<li><a href="https://maven.apache.org">Apache Maven</a> 3.1+</li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+
+<p>Goals available for this plugin:</p>
+
+
+
+
+
+
+<div class="mavenplugin-goals">
+  <table class="table">
+    <caption>5 goals</caption>
+    <thead>
+      <tr>
+        <th scope="col">Goal</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="goal-name"><a href="dionysus-build"><i class="fas fa-bullseye"></i> dionysus:build</a></td>
+        <td class="goal-description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="goal-name"><a href="dionysus-generate-data"><i class="fas fa-bullseye"></i> dionysus:generate-data</a></td>
+        <td class="goal-description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="goal-name"><a href="dionysus-help"><i class="fas fa-bullseye"></i> dionysus:help</a></td>
+        <td class="goal-description">Display help information on dionysus-maven-plugin.<br />
+Call <code>mvn dionysus:help -Ddetail=true
+-Dgoal=&lt;goal-name&gt;</code> to display parameter details.</td>
+      </tr>
+      
+      <tr>
+        <td class="goal-name"><a href="dionysus-prepare-branch"><i class="fas fa-bullseye"></i> dionysus:prepare-branch</a></td>
+        <td class="goal-description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="goal-name"><a href="dionysus-publish"><i class="fas fa-bullseye"></i> dionysus:publish</a></td>
+        <td class="goal-description"><i class="missing-data"></i></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+
+<h2 id="usage">Usage</h2>
+
+<p>Specify the version in project plugin configuration:</p>
+
+<p>
+
+
+
+
+
+
+<div class="mavenplugin-usage">
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#309;font-weight:bold">&lt;project&gt;</span>
+  <span style="color:#309;font-weight:bold">&lt;build&gt;</span>
+    <span style="color:#09f;font-style:italic">&lt;!-- plugin management --&gt;</span>
+    <span style="color:#309;font-weight:bold">&lt;pluginMangement&gt;</span>
+      <span style="color:#309;font-weight:bold">&lt;plugins&gt;</span>
+        <span style="color:#309;font-weight:bold">&lt;plugin&gt;</span>
+          <span style="color:#309;font-weight:bold">&lt;groupId&gt;</span>org.sonatype.goodies.dionysus<span style="color:#309;font-weight:bold">&lt;/groupId&gt;</span>
+          <span style="color:#309;font-weight:bold">&lt;artifactId&gt;</span>dionysus-maven-plugin<span style="color:#309;font-weight:bold">&lt;/artifactId&gt;</span>
+          <span style="color:#309;font-weight:bold">&lt;version&gt;</span>1-SNAPSHOT<span style="color:#309;font-weight:bold">&lt;/version&gt;</span>
+        <span style="color:#309;font-weight:bold">&lt;/plugin&gt;</span>
+      <span style="color:#309;font-weight:bold">&lt;/plugins&gt;</span>
+    <span style="color:#309;font-weight:bold">&lt;/pluginMangement&gt;</span>
+
+    <span style="color:#09f;font-style:italic">&lt;!-- plugin execution --&gt;</span>
+    <span style="color:#309;font-weight:bold">&lt;plugins&gt;</span>
+      <span style="color:#309;font-weight:bold">&lt;plugin&gt;</span>
+        <span style="color:#309;font-weight:bold">&lt;groupId&gt;</span>org.sonatype.goodies.dionysus<span style="color:#309;font-weight:bold">&lt;/groupId&gt;</span>
+        <span style="color:#309;font-weight:bold">&lt;artifactId&gt;</span>dionysus-maven-plugin<span style="color:#309;font-weight:bold">&lt;/artifactId&gt;</span>
+        <span style="color:#309;font-weight:bold">&lt;version&gt;</span>1-SNAPSHOT<span style="color:#309;font-weight:bold">&lt;/version&gt;</span>
+      <span style="color:#309;font-weight:bold">&lt;/plugin&gt;</span>
+    <span style="color:#309;font-weight:bold">&lt;/plugins&gt;</span>
+  <span style="color:#309;font-weight:bold">&lt;/build&gt;</span>
+<span style="color:#309;font-weight:bold">&lt;/project&gt;</span>
+</code></pre></div>
+</div>
+
+</p>
+
+<h2 id="features">Features</h2>
+
+
+<table class="page-list">
+
+  <tr>
+    <td class="glyph">
+      <i class="fas fa-bullseye"></i>
+    </td>
+    <td class="title">
+      <a href="/dionysus-support/maven-plugin/dionysus-build/">dionysus:build</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="glyph">
+      <i class="fas fa-bullseye"></i>
+    </td>
+    <td class="title">
+      <a href="/dionysus-support/maven-plugin/dionysus-generate-data/">dionysus:generate-data</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="glyph">
+      <i class="fas fa-bullseye"></i>
+    </td>
+    <td class="title">
+      <a href="/dionysus-support/maven-plugin/dionysus-help/">dionysus:help</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="glyph">
+      <i class="fas fa-bullseye"></i>
+    </td>
+    <td class="title">
+      <a href="/dionysus-support/maven-plugin/dionysus-prepare-branch/">dionysus:prepare-branch</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="glyph">
+      <i class="fas fa-bullseye"></i>
+    </td>
+    <td class="title">
+      <a href="/dionysus-support/maven-plugin/dionysus-publish/">dionysus:publish</a>
+    </td>
+  </tr>
+
+</table>
+
+
+    </main>
+    
+<footer id="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="section-brand">
+        <h5 class="section-title"><img src="/dionysus-support/images/sonatype-24x24.png" width="24" height="24" alt=""></h5>
+        <small class="section-entry">&copy; 2018-present, Sonatype Inc.</small>
+      </div>
+
+      
+        <div class="section">
+          <h5 class="section-title">About</h5>
+          <ul class="section-list">
+            
+            <li><a class="section-entry" href="/dionysus-support/about/">
+              
+              Dionysus Support</a></li>
+            
+          </ul>
+        </div>
+      
+        <div class="section">
+          <h5 class="section-title">Resources</h5>
+          <ul class="section-list">
+            
+            <li><a class="section-entry" href="/dionysus-support/categories/">
+              
+              Categories</a></li>
+            
+            <li><a class="section-entry" href="/dionysus-support/tags/">
+              
+              Tags</a></li>
+            
+          </ul>
+        </div>
+      
+        <div class="section">
+          <h5 class="section-title">Legal</h5>
+          <ul class="section-list">
+            
+            <li><a class="section-entry" href="/dionysus-support/license/">
+              
+              License</a></li>
+            
+          </ul>
+        </div>
+      
+    </div>
+  </div>
+</footer>
+    
+<script src="/dionysus-support/theme.js"></script>
+  </wrapper>
+</body>
+</html>

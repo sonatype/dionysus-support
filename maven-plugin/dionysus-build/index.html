@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html id="site-root" lang="en-us">
+<head>
+  
+<meta charset="UTF-8"/>
+<meta name="author" content="Sonatype, Inc."/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>dionysus:build &ndash; Dionysus Support</title>
+
+<link rel="shortcut icon" href="/dionysus-support/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/dionysus-support/favicon.ico"/>
+<link rel="icon" type="image/png" href="/dionysus-support/images/favicon-16x16.png" sizes="16x16"/>
+<link rel="icon" type="image/png" href="/dionysus-support/images/favicon-32x32.png" sizes="32x32"/>
+
+<link rel="stylesheet" href="/dionysus-support/theme.css">
+
+
+  
+  <script>
+    var site_BaseURL = "https:\/\/jdillon.github.io\/dionysus-support\/";
+    var site_BasePath = "\/dionysus-support";
+  </script>
+
+  
+</head>
+<body id="site-body">
+  <wrapper id="site-wrapper">
+    
+<header id="site-header">
+  <nav id="site-topnav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/dionysus-support/">
+        <img class="d-inline-block align-top mr-2" src="/dionysus-support/images/sonatype-dark-32x32.png" width="32" height="32" alt="">
+        Dionysus Support
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-toggle">
+        <ul class="navbar-nav mr-auto">
+          
+          
+            <li class="nav-item">
+              <a class="nav-link active" href="/dionysus-support/maven-plugin/" title="Maven Plugin">Maven Plugin</a>
+            </li>
+          
+        </ul>
+
+        <form class="form-inline d-flex flex-nowrap" action="https://jdillon.github.io/dionysus-support/search" method="get">
+          <div class="input-group" data-toggle="tooltip" data-placement="bottom" title="Search">
+            <input class="form-control border-right-0 border-dark bg-dark text-light" type="search" name="q"
+                   placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+    <main id="site-content">
+      
+<div id="page-description">
+  <h1 class="title"><i class="fas fa-bullseye"></i> dionysus:build</h1>
+  
+</div>
+
+
+
+
+
+
+<div class="mavenplugin-goal">
+  
+
+  <dl class="goal-metadata">
+    <dt class="name">Full name</dt>
+    <dd class="value monospace">org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:build</dd>
+
+    
+
+    
+
+    <dt class="name">Requires Project</dt>
+    <dd class="value monospace">true</dd>
+
+    <dt class="name">Requires Online</dt>
+    <dd class="value monospace">false</dd>
+
+    <dt class="name">Requires Direct Invocation</dt>
+    <dd class="value monospace">true</dd>
+
+    <dt class="name">Thread-safe</dt>
+    <dd class="value monospace">false</dd>
+  </dl>
+
+  <h3>Parameters</h3>
+
+  
+  <table class="parameters-table">
+    <caption>13 parameters</caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Since</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="name"><a href="#collectData"><i class="fas fa-code"></i> collectData</a></td>
+        <td class="type">boolean</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#generateData"><i class="fas fa-code"></i> generateData</a></td>
+        <td class="type">boolean</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#generateHugo"><i class="fas fa-code"></i> generateHugo</a></td>
+        <td class="type">boolean</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#generateMaven"><i class="fas fa-code"></i> generateMaven</a></td>
+        <td class="type">boolean</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#hugoData"><i class="fas fa-code"></i> hugoData</a></td>
+        <td class="type">java.io.File</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#hugoDir"><i class="fas fa-code"></i> hugoDir</a></td>
+        <td class="type">java.io.File</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#hugoExecutable"><i class="fas fa-code"></i> hugoExecutable</a></td>
+        <td class="type">java.io.File</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#hugoOptions"><i class="fas fa-code"></i> hugoOptions</a></td>
+        <td class="type">java.util.List</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#mavenGoals"><i class="fas fa-code"></i> mavenGoals</a></td>
+        <td class="type">java.util.List</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#mavenOptions"><i class="fas fa-code"></i> mavenOptions</a></td>
+        <td class="type">java.util.List</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#rebuildTheme"><i class="fas fa-code"></i> rebuildTheme</a></td>
+        <td class="type">boolean</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#theme"><i class="fas fa-code"></i> theme</a></td>
+        <td class="type">org.sonatype.dionysus.maven.ThemeCoordinate</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+      <tr>
+        <td class="name"><a href="#themeName"><i class="fas fa-code"></i> themeName</a></td>
+        <td class="type">java.lang.String</td>
+        <td class="since"><i class="missing-data"></i></td>
+        <td class="description"><i class="missing-data"></i></td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="collectData"></a>
+    <h4><i class="fas fa-code"></i> collectData</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">boolean</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">true</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.collectData}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="generateData"></a>
+    <h4><i class="fas fa-code"></i> generateData</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">boolean</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">true</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.generateData}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="generateHugo"></a>
+    <h4><i class="fas fa-code"></i> generateHugo</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">boolean</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">true</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.generateHugo}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="generateMaven"></a>
+    <h4><i class="fas fa-code"></i> generateMaven</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">boolean</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">true</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.generateMaven}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="hugoData"></a>
+    <h4><i class="fas fa-code"></i> hugoData</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">java.io.File</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">true</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">${project.basedir}/src/site/hugo/data</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.hugoData}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="hugoDir"></a>
+    <h4><i class="fas fa-code"></i> hugoDir</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">java.io.File</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">true</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">${project.basedir}/src/site/hugo</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.hugoDir}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="hugoExecutable"></a>
+    <h4><i class="fas fa-code"></i> hugoExecutable</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">java.io.File</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">true</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">${project.build.directory}/hugo</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.hugoExecutable}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="hugoOptions"></a>
+    <h4><i class="fas fa-code"></i> hugoOptions</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">java.util.List</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="mavenGoals"></a>
+    <h4><i class="fas fa-code"></i> mavenGoals</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">java.util.List</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="mavenOptions"></a>
+    <h4><i class="fas fa-code"></i> mavenOptions</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">java.util.List</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="rebuildTheme"></a>
+    <h4><i class="fas fa-code"></i> rebuildTheme</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">boolean</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">false</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.rebuildTheme}</dd>
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="theme"></a>
+    <h4><i class="fas fa-code"></i> theme</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">org.sonatype.dionysus.maven.ThemeCoordinate</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">false</dd>
+
+      
+
+      
+    </dl>
+  </div>
+  
+  
+  <div class="parameter-detail">
+    <a class="anchor" name="themeName"></a>
+    <h4><i class="fas fa-code"></i> themeName</h4>
+
+    
+
+    <dl class="parameter-metadata">
+      <dt class="name">Type</dt>
+      <dd class="value monospace">java.lang.String</dd>
+
+      
+
+      <dt class="name">Required</dt>
+      <dd class="value monospace">true</dd>
+
+      
+      <dt class="name">Default Value</dt>
+      <dd class="value monospace">dionysus</dd>
+      
+
+      
+      <dt class="name">User Property</dt>
+      <dd class="value monospace">${dionysus.themeName}</dd>
+      
+    </dl>
+  </div>
+  
+</div>
+
+
+
+
+    </main>
+    
+<footer id="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="section-brand">
+        <h5 class="section-title"><img src="/dionysus-support/images/sonatype-24x24.png" width="24" height="24" alt=""></h5>
+        <small class="section-entry">&copy; 2018-present, Sonatype Inc.</small>
+      </div>
+
+      
+        <div class="section">
+          <h5 class="section-title">About</h5>
+          <ul class="section-list">
+            
+            <li><a class="section-entry" href="/dionysus-support/about/">
+              
+              Dionysus Support</a></li>
+            
+          </ul>
+        </div>
+      
+        <div class="section">
+          <h5 class="section-title">Resources</h5>
+          <ul class="section-list">
+            
+            <li><a class="section-entry" href="/dionysus-support/categories/">
+              
+              Categories</a></li>
+            
+            <li><a class="section-entry" href="/dionysus-support/tags/">
+              
+              Tags</a></li>
+            
+          </ul>
+        </div>
+      
+        <div class="section">
+          <h5 class="section-title">Legal</h5>
+          <ul class="section-list">
+            
+            <li><a class="section-entry" href="/dionysus-support/license/">
+              
+              License</a></li>
+            
+          </ul>
+        </div>
+      
+    </div>
+  </div>
+</footer>
+    
+<script src="/dionysus-support/theme.js"></script>
+  </wrapper>
+</body>
+</html>
