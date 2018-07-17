@@ -71,12 +71,10 @@ class PrepareBranchMojo
     }
     ant.mkdir(dir: checkoutDir)
 
-    log.info "Cloning $gitUrl ($gitBranch branch) to: $checkoutDir"
+    log.info "Cloning $gitUrl to: $checkoutDir"
     snippet {
       ant.exec(executable: gitExecutable, dir: checkoutDir) {
         arg(value: 'clone')
-        arg(value: '--branch')
-        arg(value: gitBranch)
         arg(value: gitUrl)
         arg(value: '.')
       }
