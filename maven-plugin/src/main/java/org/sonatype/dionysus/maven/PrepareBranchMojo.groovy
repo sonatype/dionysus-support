@@ -90,8 +90,8 @@ class PrepareBranchMojo
     }
 
     log.info "Removing existing content from $checkoutDir"
-    ant.delete() {
-      fileset(dir: checkoutDir) {
+    ant.delete(includeemptydirs: true) {
+      fileset(dir: checkoutDir, defaultexcludes: false) {
         include(name: '**')
         exclude(name: '.git/**')
       }
