@@ -90,10 +90,11 @@ class PrepareBranchMojo
     }
 
     log.info "Removing existing content from $checkoutDir"
-    ant.delete(includeemptydirs: true) {
-      fileset(dir: checkoutDir, defaultexcludes: false) {
-        include(name: '**')
-        exclude(name: '.git/**')
+    snippet {
+      ant.exec(executable: gitExecutable, dir: checkoutDir) {
+        arg(value: 'rm')
+        arg(value: '-rf')
+        arg(value: '.')
       }
     }
 
@@ -104,55 +105,30 @@ class PrepareBranchMojo
 </html>
 """
 
-    /*
-    git clone git@github.com:jdillon/dionysus-example.git gh-pages
-    cd gh-pages
-    git co --orphan gh-pages
-    rm -rf * .gitignore
-    touch index.html
-    git add index.html
-    git ci -a -m "initial"
-    git push origin gh-pages
-   */
-
-    log.info 'Adding changed files'
+    log.info 'Adding files'
     ant.exec(executable: gitExecutable, dir: checkoutDir, failonerror: true) {
       arg(value: 'add')
       arg(value: 'index.html')
     }
 
-    log.info 'Checking status'
-    ant.exec(executable: gitExecutable, dir: checkoutDir, failonerror: true, outputproperty: 'git-status') {
-      arg(value: 'status')
-      arg(value: '--short')
+    log.info 'Committing changes'
+    snippet {
+      ant.exec(executable: gitExecutable, dir: checkoutDir, failonerror: true) {
+        arg(value: 'commit')
+        arg(value: '-m')
+        arg(value: 'Initial site content')
+      }
     }
-    def status = (ant.project.properties.'git-status' as String).trim()
 
-    if (status) {
-      snippet { println status }
-
-      log.info 'Committing changes'
+    if (!dryRun) {
+      log.info 'Pushing changes'
       snippet {
         ant.exec(executable: gitExecutable, dir: checkoutDir, failonerror: true) {
-          arg(value: 'commit')
-          arg(value: '-m')
-          arg(value: 'Initial site content')
+          arg(value: 'push')
+          arg(value: 'origin')
+          arg(value: gitBranch)
         }
       }
-
-      if (!dryRun) {
-        log.info 'Pushing changes'
-        snippet {
-          ant.exec(executable: gitExecutable, dir: checkoutDir, failonerror: true) {
-            arg(value: 'push')
-            arg(value: 'origin')
-            arg(value: gitBranch)
-          }
-        }
-      }
-    }
-    else {
-      log.info 'No changes detected'
     }
 
     log.info 'Done'
