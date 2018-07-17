@@ -21,7 +21,7 @@
     "babel-brunch": "~6.0",
     "babel-preset-env": "^1.7.0",
     "bootstrap": "4",
-    "brunch": "^2",
+    "brunch": "^2.10.12",
     "clean-css-brunch": "^2",
     "copycat-brunch": "^1.1.0",
     "jquery": "3",
