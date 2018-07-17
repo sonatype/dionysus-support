@@ -29,6 +29,8 @@ Support for using Dionysus [Hugo](https://gohugo.io) theme.
 
 ## Site
 
+To keep things simple for production and development, build will write files into the `src/site/hugo` directory.
+
 ### Building
 
     ./mvnw clean install && ./mvnw -Pdionysus dionysus:build
