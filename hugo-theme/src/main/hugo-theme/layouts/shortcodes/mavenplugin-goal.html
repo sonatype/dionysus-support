@@ -56,7 +56,7 @@
         <td class="name"><a href="#{{ .name }}"><i class="fas fa-code"></i> {{ .name }}</a></td>
         <td class="type">{{ .type }}</td>
         <td class="since">{{ .since | default (safeHTML `<i class="missing-data"></i>`) }}</td>
-        <td class="description">{{ safeHTML .description }}</td>
+        <td class="description">{{ safeHTML (.description | default `<i class="missing-data"></i>`) }}</td>
       </tr>
       {{ end }}
     </tbody>
