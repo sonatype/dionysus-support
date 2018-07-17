@@ -16,7 +16,7 @@
       {{ range .mojos.mojo }}
       <tr>
         <td class="goal-name"><a href="{{ printf `%s-%s` $pagePrefix .goal }}"><i class="fas fa-bullseye"></i> {{ $plugin.goalPrefix }}:{{ .goal }}</a></td>
-        <td class="goal-description">{{ safeHTML (.description | default `<i class="fas fa-ban"></i>`) }}</td>
+        <td class="goal-description">{{ safeHTML (.description | default `<i class="missing-data"></i>`) }}</td>
       </tr>
       {{ end }}
     </tbody>
