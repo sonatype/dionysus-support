@@ -43,13 +43,7 @@
               <goal>execute</goal>
             </goals>
             <configuration>
-              <source>
-                ['install', 'build'].each { command ->
-                  ant.exec(executable: 'yarn', dir: '${project.basedir}/src/main/hugo-theme', failonerror: true) {
-                    arg(value: command)
-                  }
-                }
-              </source>
+              <source>${project.basedir}/src/main/script/build.groovy</source>
             </configuration>
           </execution>
         </executions>
