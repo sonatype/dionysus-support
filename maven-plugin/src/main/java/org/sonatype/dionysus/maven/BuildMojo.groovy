@@ -107,7 +107,7 @@ class BuildMojo
   List<String> mavenGoals = []
 
   /**
-   * Generate Hugo data with {@code org.sonatype.dionysus:dionysus-maven-plugin:generate-data}.
+   * Generate Hugo data with {@code org.sonatype.goodies.dionysus:dionysus-maven-plugin:generate-data}.
    *
    * Maven execution will have {@code dionysus} and {@code dionysus-generate-data} profiles enabled
    * and include any configured {@link #mavenOptions}.
@@ -185,7 +185,7 @@ class BuildMojo
           mavenOptions.each { option ->
             arg(value: option)
           }
-          arg(value: 'org.sonatype.dionysus:dionysus-maven-plugin:generate-data')
+          arg(value: 'org.sonatype.goodies.dionysus:dionysus-maven-plugin:generate-data')
         }
       }
     }
