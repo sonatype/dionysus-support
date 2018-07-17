@@ -1,11 +1,12 @@
 ---
 name: Dionysys Hugo Theme
 license: ASL2
-licenselink: https://github.com/jdillon/dionysus-hugo-theme/blob/master/LICENSE
-description: Hugo theme for project sites
-homepage: https://github.com/jdillon/dionysus-hugo-theme
+licenselink: https://github.com/jdillon/dionysus-support/blob/master/LICENSE
+description: Dionysys Hugo theme for building project sites
+homepage: https://github.com/jdillon/dionysus-support
 tags:
   - sonatype
+  - dionysus
   - project-site
 features: []
 min_version: 0.41
