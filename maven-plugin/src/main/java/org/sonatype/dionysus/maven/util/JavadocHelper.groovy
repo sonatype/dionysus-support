@@ -47,6 +47,8 @@ import org.w3c.tidy.Tidy
  */
 class JavadocHelper
 {
+  private static String LINE_SEP = System.getProperty('line.separator')
+
   /**
    * Clean Javadoc descriptions.
    */
@@ -57,6 +59,10 @@ class JavadocHelper
 
     // first decode any javadoc tags
     String cleaned = decodeJavadocTags(description)
+
+    // convert all new-lines to breaks
+//    cleaned = cleaned.replaceAll(LINE_SEP + LINE_SEP, LINE_SEP)
+//    cleaned = cleaned.replaceAll(LINE_SEP, '<br/>')
 
     // then further clean up with JTidy
     def tidy = new Tidy(
@@ -86,9 +92,8 @@ class JavadocHelper
     }
 
     // strip the header/body stuff
-    String ls = System.getProperty('line.separator')
-    int startPos = cleaned.indexOf('<body>' + ls) + 6 + ls.length()
-    int endPos = cleaned.indexOf(ls + '</body>')
+    int startPos = cleaned.indexOf('<body>' + LINE_SEP) + 6 + LINE_SEP.length()
+    int endPos = cleaned.indexOf(LINE_SEP + '</body>')
     return cleaned.substring(startPos, endPos)
   }
 

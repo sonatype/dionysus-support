@@ -25,7 +25,7 @@ import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.PlexusContainer;
 
 /**
- * Generate data.
+ * Generate Hugo site data from Maven models.
  *
  * @since ???
  */
