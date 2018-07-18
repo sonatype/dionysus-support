@@ -39,32 +39,32 @@ import org.slf4j.LoggerFactory
 abstract class MojoSupport
   extends AbstractMojo
 {
-  protected final Logger log = LoggerFactory.getLogger(getClass())
+  public final Logger log = LoggerFactory.getLogger(getClass())
 
   @Component
-  private AntBuilderFactory antFactory
+  AntBuilderFactory antFactory
 
   @Parameter(defaultValue = '${project}', readonly = true)
-  protected MavenProject project
+  MavenProject project
 
   @Parameter(defaultValue = '${session}', readonly = true)
-  protected MavenSession session
+  MavenSession session
 
   @Parameter(defaultValue = '${settings}', readonly = true)
-  protected Settings settings
+  Settings settings
 
   @Component
-  protected ArtifactResolver artifactResolver
+  ArtifactResolver artifactResolver
 
   // helper to run a task surrounded by snippet markers
-  protected def snippet = { Closure task ->
+  def snippet = { Closure task ->
     println '----8<----'
     task.run()
     println '---->8----'
   }
 
   @Memoized
-  protected AntBuilder getAnt() {
+  AntBuilder getAnt() {
     log.debug("Creating AntBuilder for: ${getClass()}")
     return antFactory.create(getClass())
   }
@@ -84,7 +84,7 @@ abstract class MojoSupport
 
   protected abstract void doExecute()
 
-  protected Artifact resolveArtifact(final ArtifactCoordinate coordinate) {
+  Artifact resolveArtifact(final ArtifactCoordinate coordinate) {
     log.debug("Resolving artifact: $coordinate")
 
     def request = new DefaultProjectBuildingRequest(session.projectBuildingRequest)
