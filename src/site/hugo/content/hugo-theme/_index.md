@@ -1,7 +1,7 @@
 ---
 title: Hugo Theme
 subtitle: dionysus-hugo-theme 
-glyph: fas fa-puzzle-piece
+glyph: fas fa-palette
 
 draft: false
 
