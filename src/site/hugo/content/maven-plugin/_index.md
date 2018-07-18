@@ -8,7 +8,7 @@ draft: false
 menu:
   topnav:
     identifier: Maven-Plugin
-    weight: 10
+    weight: 20
 
 categories:
   - maven
