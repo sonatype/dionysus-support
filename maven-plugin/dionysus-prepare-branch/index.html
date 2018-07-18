@@ -79,11 +79,18 @@
 
 <div class="mavenplugin-goal">
   
+  <p class="goal-description">
+    Prepare Github pages branch for publishing.
+  </p>
+  
 
   <dl class="goal-metadata">
     <dt class="name">Full name</dt>
     <dd class="value monospace">org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:prepare-branch</dd>
 
+    
+    <dt class="name">Since</dt>
+    <dd class="value monospace">???</dd>
     
 
     
@@ -120,28 +127,29 @@
         <td class="name"><a href="#checkoutDir"><i class="fas fa-code"></i> checkoutDir</a></td>
         <td class="type">java.io.File</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Directory where a checkout to perform changes will be done.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#dryRun"><i class="fas fa-code"></i> dryRun</a></td>
         <td class="type">boolean</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Set to avoid push of final changes.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#gitBranch"><i class="fas fa-code"></i> gitBranch</a></td>
         <td class="type">java.lang.String</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">The branch where content will be published. All content on this
+branch will be replaced by what is generated.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#gitExecutable"><i class="fas fa-code"></i> gitExecutable</a></td>
         <td class="type">java.lang.String</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">GIT executable to use.</td>
       </tr>
       
     </tbody>
@@ -153,6 +161,10 @@
     <a class="anchor" name="checkoutDir"></a>
     <h4><i class="fas fa-code"></i> checkoutDir</h4>
 
+    
+    <p class="parameter-description">
+      Directory where a checkout to perform changes will be done.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -182,6 +194,10 @@
     <h4><i class="fas fa-code"></i> dryRun</h4>
 
     
+    <p class="parameter-description">
+      Set to avoid push of final changes.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -210,6 +226,11 @@
     <h4><i class="fas fa-code"></i> gitBranch</h4>
 
     
+    <p class="parameter-description">
+      The branch where content will be published. All content on this
+branch will be replaced by what is generated.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -237,6 +258,10 @@
     <a class="anchor" name="gitExecutable"></a>
     <h4><i class="fas fa-code"></i> gitExecutable</h4>
 
+    
+    <p class="parameter-description">
+      GIT executable to use.
+    </p>
     
 
     <dl class="parameter-metadata">

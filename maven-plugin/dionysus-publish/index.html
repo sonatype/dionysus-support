@@ -79,11 +79,19 @@
 
 <div class="mavenplugin-goal">
   
+  <p class="goal-description">
+    Publish site content for use with Github pages. Requires site to
+have been previously built with <code>dionysus:build</code>.
+  </p>
+  
 
   <dl class="goal-metadata">
     <dt class="name">Full name</dt>
     <dd class="value monospace">org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:publish</dd>
 
+    
+    <dt class="name">Since</dt>
+    <dd class="value monospace">???</dd>
     
 
     
@@ -120,49 +128,52 @@
         <td class="name"><a href="#checkoutDir"><i class="fas fa-code"></i> checkoutDir</a></td>
         <td class="type">java.io.File</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Directory where a checkout of configured branch to perform changes
+will be done.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#dryRun"><i class="fas fa-code"></i> dryRun</a></td>
         <td class="type">boolean</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Set to avoid push of final changes.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#gitBranch"><i class="fas fa-code"></i> gitBranch</a></td>
         <td class="type">java.lang.String</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">The branch where content will be published. All content on this
+branch will be replaced by what is generated.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#gitExecutable"><i class="fas fa-code"></i> gitExecutable</a></td>
         <td class="type">java.lang.String</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">GIT executable to use.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#hugoPublicDir"><i class="fas fa-code"></i> hugoPublicDir</a></td>
         <td class="type">java.io.File</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Hugo-generated content directory. This needs to match the value
+configured in Hugo configuration <code>publishdir</code> parameter.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#mavenSitePrefix"><i class="fas fa-code"></i> mavenSitePrefix</a></td>
         <td class="type">java.lang.String</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Prefix for where Maven-generated will be stored.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#siteDir"><i class="fas fa-code"></i> siteDir</a></td>
         <td class="type">java.io.File</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Maven-generated content directory.</td>
       </tr>
       
     </tbody>
@@ -174,6 +185,11 @@
     <a class="anchor" name="checkoutDir"></a>
     <h4><i class="fas fa-code"></i> checkoutDir</h4>
 
+    
+    <p class="parameter-description">
+      Directory where a checkout of configured branch to perform changes
+will be done.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -203,6 +219,10 @@
     <h4><i class="fas fa-code"></i> dryRun</h4>
 
     
+    <p class="parameter-description">
+      Set to avoid push of final changes.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -230,6 +250,11 @@
     <a class="anchor" name="gitBranch"></a>
     <h4><i class="fas fa-code"></i> gitBranch</h4>
 
+    
+    <p class="parameter-description">
+      The branch where content will be published. All content on this
+branch will be replaced by what is generated.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -259,6 +284,10 @@
     <h4><i class="fas fa-code"></i> gitExecutable</h4>
 
     
+    <p class="parameter-description">
+      GIT executable to use.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -286,6 +315,11 @@
     <a class="anchor" name="hugoPublicDir"></a>
     <h4><i class="fas fa-code"></i> hugoPublicDir</h4>
 
+    
+    <p class="parameter-description">
+      Hugo-generated content directory. This needs to match the value
+configured in Hugo configuration <code>publishdir</code> parameter.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -315,6 +349,10 @@
     <h4><i class="fas fa-code"></i> mavenSitePrefix</h4>
 
     
+    <p class="parameter-description">
+      Prefix for where Maven-generated will be stored.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -342,6 +380,10 @@
     <a class="anchor" name="siteDir"></a>
     <h4><i class="fas fa-code"></i> siteDir</h4>
 
+    
+    <p class="parameter-description">
+      Maven-generated content directory.
+    </p>
     
 
     <dl class="parameter-metadata">

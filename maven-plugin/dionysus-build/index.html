@@ -79,11 +79,18 @@
 
 <div class="mavenplugin-goal">
   
+  <p class="goal-description">
+    Build site content.
+  </p>
+  
 
   <dl class="goal-metadata">
     <dt class="name">Full name</dt>
     <dd class="value monospace">org.sonatype.goodies.dionysus:dionysus-maven-plugin:1-SNAPSHOT:build</dd>
 
+    
+    <dt class="name">Since</dt>
+    <dd class="value monospace">???</dd>
     
 
     
@@ -120,91 +127,102 @@
         <td class="name"><a href="#collectData"><i class="fas fa-code"></i> collectData</a></td>
         <td class="type">boolean</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Collect generated Hugo data.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#generateData"><i class="fas fa-code"></i> generateData</a></td>
         <td class="type">boolean</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Generate Hugo data with
+<code>org.sonatype.goodies.dionysus:dionysus-maven-plugin:generate-data</code>.
+Maven execution will have <code>dionysus</code> and
+<code>dionysus-generate-data</code> profiles enabled and include
+any configured <code>mavenOptions</code>.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#generateHugo"><i class="fas fa-code"></i> generateHugo</a></td>
         <td class="type">boolean</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Generate Hugo content.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#generateMaven"><i class="fas fa-code"></i> generateMaven</a></td>
         <td class="type">boolean</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Generate Maven content. Maven execution will have
+<code>dionysus</code> <code>dionysus-generate-maven-site</code>
+profiles enabled and include any configured
+<code>mavenOptions</code>.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#hugoData"><i class="fas fa-code"></i> hugoData</a></td>
         <td class="type">java.io.File</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Where generate Hugo data will be collected to.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#hugoDir"><i class="fas fa-code"></i> hugoDir</a></td>
         <td class="type">java.io.File</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Location of the Hugo site.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#hugoExecutable"><i class="fas fa-code"></i> hugoExecutable</a></td>
         <td class="type">java.io.File</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Hugo executable. This can be overridden to a locally installed
+Hugo, or by default will extract a binary for the platform. Only
+supports Mac and Linux.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#hugoOptions"><i class="fas fa-code"></i> hugoOptions</a></td>
         <td class="type">java.util.List</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Additional options to pass to the <code>hugo</code> executable.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#mavenGoals"><i class="fas fa-code"></i> mavenGoals</a></td>
         <td class="type">java.util.List</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">The goals which will be executed to generate Maven content.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#mavenOptions"><i class="fas fa-code"></i> mavenOptions</a></td>
         <td class="type">java.util.List</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Additional options to pass to Maven executions.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#rebuildTheme"><i class="fas fa-code"></i> rebuildTheme</a></td>
         <td class="type">boolean</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Rebuild the theme. This requires additional setup to function.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#theme"><i class="fas fa-code"></i> theme</a></td>
         <td class="type">org.sonatype.dionysus.maven.ThemeCoordinate</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Coordinates to theme bundle. This needs to be <code>zip</code>
+artifact.</td>
       </tr>
       
       <tr>
         <td class="name"><a href="#themeName"><i class="fas fa-code"></i> themeName</a></td>
         <td class="type">java.lang.String</td>
         <td class="since"><i class="missing-data"></i></td>
-        <td class="description"><i class="missing-data"></i></td>
+        <td class="description">Name of theme. When used with <code>theme</code> parameter this
+will be the directory the theme bundle will be installed.</td>
       </tr>
       
     </tbody>
@@ -216,6 +234,10 @@
     <a class="anchor" name="collectData"></a>
     <h4><i class="fas fa-code"></i> collectData</h4>
 
+    
+    <p class="parameter-description">
+      Collect generated Hugo data.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -245,6 +267,14 @@
     <h4><i class="fas fa-code"></i> generateData</h4>
 
     
+    <p class="parameter-description">
+      Generate Hugo data with
+<code>org.sonatype.goodies.dionysus:dionysus-maven-plugin:generate-data</code>.
+Maven execution will have <code>dionysus</code> and
+<code>dionysus-generate-data</code> profiles enabled and include
+any configured <code>mavenOptions</code>.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -272,6 +302,10 @@
     <a class="anchor" name="generateHugo"></a>
     <h4><i class="fas fa-code"></i> generateHugo</h4>
 
+    
+    <p class="parameter-description">
+      Generate Hugo content.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -301,6 +335,13 @@
     <h4><i class="fas fa-code"></i> generateMaven</h4>
 
     
+    <p class="parameter-description">
+      Generate Maven content. Maven execution will have
+<code>dionysus</code> <code>dionysus-generate-maven-site</code>
+profiles enabled and include any configured
+<code>mavenOptions</code>.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -328,6 +369,10 @@
     <a class="anchor" name="hugoData"></a>
     <h4><i class="fas fa-code"></i> hugoData</h4>
 
+    
+    <p class="parameter-description">
+      Where generate Hugo data will be collected to.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -357,6 +402,10 @@
     <h4><i class="fas fa-code"></i> hugoDir</h4>
 
     
+    <p class="parameter-description">
+      Location of the Hugo site.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -384,6 +433,12 @@
     <a class="anchor" name="hugoExecutable"></a>
     <h4><i class="fas fa-code"></i> hugoExecutable</h4>
 
+    
+    <p class="parameter-description">
+      Hugo executable. This can be overridden to a locally installed
+Hugo, or by default will extract a binary for the platform. Only
+supports Mac and Linux.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -413,6 +468,10 @@
     <h4><i class="fas fa-code"></i> hugoOptions</h4>
 
     
+    <p class="parameter-description">
+      Additional options to pass to the <code>hugo</code> executable.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -434,6 +493,10 @@
     <a class="anchor" name="mavenGoals"></a>
     <h4><i class="fas fa-code"></i> mavenGoals</h4>
 
+    
+    <p class="parameter-description">
+      The goals which will be executed to generate Maven content.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -457,6 +520,10 @@
     <h4><i class="fas fa-code"></i> mavenOptions</h4>
 
     
+    <p class="parameter-description">
+      Additional options to pass to Maven executions.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -478,6 +545,10 @@
     <a class="anchor" name="rebuildTheme"></a>
     <h4><i class="fas fa-code"></i> rebuildTheme</h4>
 
+    
+    <p class="parameter-description">
+      Rebuild the theme. This requires additional setup to function.
+    </p>
     
 
     <dl class="parameter-metadata">
@@ -507,6 +578,11 @@
     <h4><i class="fas fa-code"></i> theme</h4>
 
     
+    <p class="parameter-description">
+      Coordinates to theme bundle. This needs to be <code>zip</code>
+artifact.
+    </p>
+    
 
     <dl class="parameter-metadata">
       <dt class="name">Type</dt>
@@ -528,6 +604,11 @@
     <a class="anchor" name="themeName"></a>
     <h4><i class="fas fa-code"></i> themeName</h4>
 
+    
+    <p class="parameter-description">
+      Name of theme. When used with <code>theme</code> parameter this
+will be the directory the theme bundle will be installed.
+    </p>
     
 
     <dl class="parameter-metadata">
