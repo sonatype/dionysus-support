@@ -7,6 +7,7 @@
     "build-dev": "brunch build"
   },
   "dependencies": {
+    "brunch": "^2.10.12",
     "after-brunch": "^0.0.5",
     "fuse.js": "^3.2.1",
     "mark.js": "^8.11.1",
@@ -18,7 +19,6 @@
     "babel-brunch": "~6.0",
     "babel-preset-env": "^1.7.0",
     "bootstrap": "4",
-    "brunch": "^2.10.12",
     "clean-css-brunch": "^2",
     "copycat-brunch": "^1.1.0",
     "jquery": "3",
