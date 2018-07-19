@@ -14,7 +14,7 @@
 // Build
 //
 
-def themeDir = new File(project.basedir as File, 'src/main/hugo-theme')
+def themeDir = new File(project.basedir as File, 'src/main/theme')
 
 ['install', 'build'].each { command ->
   ant.exec(executable: 'yarn', dir: themeDir, failonerror: true) {

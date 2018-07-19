@@ -213,7 +213,7 @@
           <configuration>
             <excludes combine.children="append">
               <exclude>src/site/hugo/**</exclude>
-              <exclude>hugo-theme/src/main/hugo-theme/**</exclude>
+              <exclude>hugo-theme/src/main/theme/**</exclude>
             </excludes>
           </configuration>
         </plugin>
