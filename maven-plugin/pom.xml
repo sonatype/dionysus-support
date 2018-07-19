@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.sonatype.goodies.dionysus</groupId>
     <artifactId>dionysus-support</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>dionysus-maven-plugin</artifactId>
