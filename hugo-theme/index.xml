@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Theme on Dionysus Support</title>
-    <link>https://jdillon.github.io/dionysus-support/hugo-theme/</link>
+    <link>https://sonatype.github.io/dionysus-support/hugo-theme/</link>
     <description>Recent content in Hugo Theme on Dionysus Support</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jdillon.github.io/dionysus-support/hugo-theme/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sonatype.github.io/dionysus-support/hugo-theme/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

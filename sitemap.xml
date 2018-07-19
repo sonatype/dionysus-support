@@ -3,86 +3,86 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/about/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/about/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/categories/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/categories/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/tags/dionysus-hugo-theme/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/tags/dionysus-hugo-theme/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/tags/dionysus-maven-plugin/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/tags/dionysus-maven-plugin/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/categories/hugo/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/categories/hugo/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/categories/hugo-theme/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/categories/hugo-theme/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/hugo-theme/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/hugo-theme/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/license/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/license/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/categories/maven/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/categories/maven/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/categories/maven-plugin/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/categories/maven-plugin/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/search/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/search/</loc>
     <priority>0.1</priority>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/tags/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/tags/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-build/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/dionysus-build/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-generate-data/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/dionysus-generate-data/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-help/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/dionysus-help/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-prepare-branch/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/dionysus-prepare-branch/</loc>
   </url>
   
   <url>
-    <loc>https://jdillon.github.io/dionysus-support/maven-plugin/dionysus-publish/</loc>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/dionysus-publish/</loc>
   </url>
   
 </urlset>

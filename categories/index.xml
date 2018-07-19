@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Dionysus Support</title>
-    <link>https://jdillon.github.io/dionysus-support/categories/</link>
+    <link>https://sonatype.github.io/dionysus-support/categories/</link>
     <description>Recent content in Categories on Dionysus Support</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jdillon.github.io/dionysus-support/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sonatype.github.io/dionysus-support/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo</title>
-      <link>https://jdillon.github.io/dionysus-support/categories/hugo/</link>
+      <link>https://sonatype.github.io/dionysus-support/categories/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jdillon.github.io/dionysus-support/categories/hugo/</guid>
+      <guid>https://sonatype.github.io/dionysus-support/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo Theme</title>
-      <link>https://jdillon.github.io/dionysus-support/categories/hugo-theme/</link>
+      <link>https://sonatype.github.io/dionysus-support/categories/hugo-theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jdillon.github.io/dionysus-support/categories/hugo-theme/</guid>
+      <guid>https://sonatype.github.io/dionysus-support/categories/hugo-theme/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven</title>
-      <link>https://jdillon.github.io/dionysus-support/categories/maven/</link>
+      <link>https://sonatype.github.io/dionysus-support/categories/maven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jdillon.github.io/dionysus-support/categories/maven/</guid>
+      <guid>https://sonatype.github.io/dionysus-support/categories/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven Plugin</title>
-      <link>https://jdillon.github.io/dionysus-support/categories/maven-plugin/</link>
+      <link>https://sonatype.github.io/dionysus-support/categories/maven-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jdillon.github.io/dionysus-support/categories/maven-plugin/</guid>
+      <guid>https://sonatype.github.io/dionysus-support/categories/maven-plugin/</guid>
       <description></description>
     </item>
     
