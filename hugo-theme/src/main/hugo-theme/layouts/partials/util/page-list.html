@@ -1,12 +1,13 @@
 <table class="page-list">
-{{ range . }}
+  {{ range . }}
   <tr>
     <td class="glyph">
       {{ if .Params.glyph }}<i class="{{ .Params.glyph }}"></i>{{ end }}
     </td>
     <td class="title">
       <a href="{{ .URL }}">{{ .Title }}</a>
+      {{ if .Params.subtitle }}<span class="subtitle">- {{ .Params.subtitle }}</span>{{ end }}
     </td>
   </tr>
-{{ end }}
+  {{ end }}
 </table>

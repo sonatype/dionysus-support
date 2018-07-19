@@ -62,4 +62,8 @@
   .title {
     // empty
   }
+
+  .subtitle {
+    @extend .text-muted;
+  }
 }
