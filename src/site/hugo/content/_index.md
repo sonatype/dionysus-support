@@ -4,6 +4,8 @@ title: Welcome
 draft: false
 ---
 
+{{<img src="/images/dionysus-medium.png" class="float-right pl-3">}}
+
 ## Hugo Theme
 
 * [dionysus-hugo-theme](hugo-theme)
