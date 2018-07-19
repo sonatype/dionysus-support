@@ -245,9 +245,6 @@
                   <artifactId>dionysus-hugo-theme</artifactId>
                   <version>1-SNAPSHOT</version>
                 </theme>
-                <mavenOptions>
-                  <option>-Psite</option>
-                </mavenOptions>
                 <mavenGoals>
                   <goal>javadoc:aggregate</goal>
                   <goal>jxr:aggregate</goal>
