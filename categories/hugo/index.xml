@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Dionysus Support</title>
+    <link>https://jdillon.github.io/dionysus-support/categories/hugo/</link>
+    <description>Recent content in Hugo on Dionysus Support</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jdillon.github.io/dionysus-support/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Theme</title>
+      <link>https://jdillon.github.io/dionysus-support/hugo-theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jdillon.github.io/dionysus-support/hugo-theme/</guid>
+      <description> Hugo theme for Maven project sites.
+ Layouts TODO
+Shortcodes TODO
+Search TODO
+Front-matter TODO
+Features </description>
+    </item>
+    
+  </channel>
+</rss>

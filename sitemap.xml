@@ -11,8 +11,27 @@
   </url>
   
   <url>
+    <loc>https://jdillon.github.io/dionysus-support/tags/dionysus-hugo-theme/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jdillon.github.io/dionysus-support/tags/dionysus-maven-plugin/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/categories/hugo/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/categories/hugo-theme/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdillon.github.io/dionysus-support/hugo-theme/</loc>
   </url>
   
   <url>
