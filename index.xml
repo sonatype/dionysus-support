@@ -16,7 +16,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sonatype.github.io/dionysus-support/about/</guid>
-      <description>Vestibulum vel sollicitudin diam. Nulla hendrerit sapien mauris, in consequat turpis ornare vel. Nunc condimentum nunc ante, sit amet porta nunc cursus suscipit. Pellentesque erat metus, scelerisque sit amet euismod et, eleifend a est. Etiam quis congue ante. Sed suscipit enim placerat condimentum malesuada. Nam vitae metus fermentum, ullamcorper nibh vitae, ultricies purus. Cras nec efficitur felis, eleifend sodales mauris. Sed accumsan ligula ut libero porta, non blandit nulla suscipit. Etiam id posuere ante.</description>
+      <description>Provides integration for building Maven project sites using the Hugo static site generator.
+Includes a Maven-plugin to generate content and automate building and publishing content.
+Attributions Hugo Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+Bootstrap Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</description>
     </item>
     
     <item>
