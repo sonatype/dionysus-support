@@ -30,12 +30,12 @@
 
   <version>1.0.0-SNAPSHOT</version>
 
-  <url>https://jdillon.github.io/dionysus-support/</url>
+  <url>https://sonatype.github.io/dionysus-support/</url>
 
   <scm>
-    <connection>scm:git:git://github.com/jdillon/dionysus-support.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/jdillon/dionysus-support.git</developerConnection>
-    <url>https://github.com/jdillon/dionysus-support</url>
+    <connection>scm:git:git://github.com/sonatype/dionysus-support.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/sonatype/dionysus-support.git</developerConnection>
+    <url>https://github.com/sonatype/dionysus-support</url>
   </scm>
 
   <inceptionYear>2018</inceptionYear>
@@ -54,13 +54,13 @@
 
   <issueManagement>
     <system>github</system>
-    <url>https://github.com/jdillon/dionysus-support/issues</url>
+    <url>https://github.com/sonatype/dionysus-support/issues</url>
   </issueManagement>
 
   <distributionManagement>
     <site>
       <id>sonatype-ghpages</id>
-      <url>scm:git:ssh://git@github.com/jdillon/dionysus-support.git</url>
+      <url>scm:git:ssh://git@github.com/sonatype/dionysus-support.git</url>
     </site>
   </distributionManagement>
 
