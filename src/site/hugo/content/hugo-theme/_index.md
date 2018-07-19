@@ -29,4 +29,12 @@ TODO
 
 TODO
 
+## Search
+
+TODO
+
+## Front-matter
+
+TODO
+
 ## Features
