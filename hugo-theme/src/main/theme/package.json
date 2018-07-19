@@ -3,7 +3,7 @@
   "description": "Dionysus Hugo Theme",
   "private": true,
   "author": "Sonatype, Inc.",
-  "version": "0.0.1",
+  "version": "1.0.0-SNAPSHOT",
   "repository": "",
   "scripts": {
     "build": "brunch build --production",

@@ -22,7 +22,7 @@ import static com.google.common.base.Preconditions.checkNotNull
 /**
  * {@link BuildMojo} taks.
  *
- * @since ???
+ * @since 1.0.0
  */
 class BuildTask
 {

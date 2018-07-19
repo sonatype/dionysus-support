@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory
 /**
  * Support for {@link Mojo} implementations.
  *
- * @since ???
+ * @since 1.0.0
  */
 abstract class MojoSupport
   extends AbstractMojo

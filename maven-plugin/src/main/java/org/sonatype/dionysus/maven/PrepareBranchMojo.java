@@ -20,7 +20,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 /**
  * Prepare Github pages branch for publishing.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Mojo(name="prepare-branch", requiresDirectInvocation = true, aggregator = true)
 class PrepareBranchMojo

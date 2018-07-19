@@ -28,7 +28,7 @@
   <name>${project.groupId}:${project.artifactId}</name>
   <packaging>pom</packaging>
 
-  <version>1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <url>https://jdillon.github.io/dionysus-support/</url>
 
@@ -65,7 +65,7 @@
   </distributionManagement>
 
   <properties>
-    <dionysus.version>1-SNAPSHOT</dionysus.version>
+    <dionysus.version>1.0.0-SNAPSHOT</dionysus.version>
 
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -84,7 +84,7 @@
       <dependency>
         <groupId>org.sonatype.goodies.dionysus</groupId>
         <artifactId>dionysus-hugo-theme</artifactId>
-        <version>1-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
       </dependency>
 
     </dependencies>
@@ -225,7 +225,7 @@
         <plugin>
           <groupId>org.sonatype.goodies.dionysus</groupId>
           <artifactId>dionysus-maven-plugin</artifactId>
-          <version>1-SNAPSHOT</version>
+          <version>1.0.0-SNAPSHOT</version>
         </plugin>
 
       </plugins>

@@ -17,7 +17,7 @@ import static com.google.common.base.Preconditions.checkNotNull
 /**
  * {@link PublishMojo} task.
  *
- * @since ???
+ * @since 1.0.0
  */
 class PublishTask
 {

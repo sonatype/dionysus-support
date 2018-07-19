@@ -43,7 +43,7 @@ import org.w3c.tidy.Tidy
 /**
  * Javadoc helper.
  *
- * @since ???
+ * @since 1.0.0
  */
 class JavadocHelper
 {

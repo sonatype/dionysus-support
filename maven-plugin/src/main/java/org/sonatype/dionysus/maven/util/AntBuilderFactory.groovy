@@ -27,7 +27,7 @@ import static com.google.common.base.Preconditions.checkNotNull
 /**
  * Factory to create Maven-adapted {@link AntBuilder} instances.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Named
 @Singleton

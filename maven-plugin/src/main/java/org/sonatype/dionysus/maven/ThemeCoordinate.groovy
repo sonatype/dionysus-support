@@ -17,7 +17,7 @@ import groovy.transform.ToString
 /**
  * Theme coordinates.
  *
- * @since ???
+ * @since 1.0.0
  */
 @ToString(includePackage = false, includeNames = true)
 class ThemeCoordinate

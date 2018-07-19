@@ -18,7 +18,7 @@ import org.json.XML
 /**
  * Generate {@code hugo-data/maven/pom/${project.artifactId}.json}.
  *
- * @since ???
+ * @since 1.0.0
  */
 class MavenPom
     extends DataGeneratorSupport

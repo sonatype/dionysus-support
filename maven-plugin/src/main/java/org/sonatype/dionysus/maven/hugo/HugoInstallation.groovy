@@ -22,7 +22,7 @@ import org.apache.maven.project.MavenProject
 /**
  * Hugo installation helper.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Slf4j
 class HugoInstallation

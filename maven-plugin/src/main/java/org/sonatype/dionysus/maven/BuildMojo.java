@@ -23,7 +23,7 @@ import org.apache.maven.project.MavenProject;
 /**
  * Build site content.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Mojo(name="build", requiresDirectInvocation = true, aggregator = true)
 class BuildMojo

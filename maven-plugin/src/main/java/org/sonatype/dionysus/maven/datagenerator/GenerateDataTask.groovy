@@ -25,7 +25,7 @@ import static com.google.common.base.Preconditions.checkNotNull
 /**
  * {@link GenerateDataMojo} task.
  *
- * @since ???
+ * @since 1.0.0
  */
 class GenerateDataTask
 {

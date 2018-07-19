@@ -20,7 +20,7 @@ import org.json.XML
 /**
  * Generate {@code hugo-data/maven/plugin/${project.artifactId}.json}.
  *
- * @since ???
+ * @since 1.0.0
  */
 class MavenPlugin
     extends DataGeneratorSupport

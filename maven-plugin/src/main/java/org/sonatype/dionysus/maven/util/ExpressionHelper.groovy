@@ -20,7 +20,7 @@ import static com.google.common.base.Preconditions.checkNotNull
 /**
  * Maven expression helper.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Slf4j
 class ExpressionHelper

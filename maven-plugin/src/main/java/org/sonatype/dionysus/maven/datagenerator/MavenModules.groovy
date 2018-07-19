@@ -17,7 +17,7 @@ import groovy.json.JsonOutput
 /**
  * Generate {@code hugo-data/maven/modules.json}.
  *
- * @since ???
+ * @since 1.0.0
  */
 class MavenModules
     extends DataGeneratorSupport

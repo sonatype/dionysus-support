@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 /**
  * Generate {@code hugo-data/maven/licenses.json}.
  *
- * @since ???
+ * @since 1.0.0
  */
 class MavenLicenses
     extends DataGeneratorSupport

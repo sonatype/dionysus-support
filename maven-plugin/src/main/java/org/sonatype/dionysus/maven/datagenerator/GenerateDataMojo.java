@@ -27,7 +27,7 @@ import org.codehaus.plexus.PlexusContainer;
 /**
  * Generate Hugo site data from Maven models.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Mojo(name = "generate-data", defaultPhase = LifecyclePhase.PREPARE_PACKAGE)
 class GenerateDataMojo

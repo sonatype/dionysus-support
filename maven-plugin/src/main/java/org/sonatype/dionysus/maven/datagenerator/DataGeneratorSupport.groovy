@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory
 /**
  * Support for {@link DataGenerator} implementations.
  *
- * @since ???
+ * @since 1.0.0
  */
 abstract class DataGeneratorSupport
   implements DataGenerator

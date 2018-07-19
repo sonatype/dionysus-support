@@ -22,7 +22,7 @@ import org.apache.maven.settings.Settings
 /**
  * Data generator.
  *
- * @since ???
+ * @since 1.0.0
  */
 interface DataGenerator
 {

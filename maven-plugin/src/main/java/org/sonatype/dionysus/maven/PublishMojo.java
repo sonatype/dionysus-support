@@ -22,7 +22,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  *
  * Requires site to have been previously built with {@code dionysus:build}.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Mojo(name="publish", requiresDirectInvocation = true, aggregator = true)
 class PublishMojo

@@ -3,7 +3,7 @@
   "description": "Dionysus Support",
   "private": true,
   "author": "Sonatype, Inc.",
-  "version": "0.0.1",
+  "version": "1.0.0-SNAPSHOT",
   "repository": "",
   "scripts": {
     "theme-build": "brunch build themes/dionysus",

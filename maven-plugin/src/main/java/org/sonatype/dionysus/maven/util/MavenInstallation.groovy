@@ -18,7 +18,7 @@ import groovy.util.logging.Slf4j
 /**
  * Maven installation helper.
  *
- * @since ???
+ * @since 1.0.0
  */
 @Slf4j
 class MavenInstallation
