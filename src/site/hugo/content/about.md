@@ -22,6 +22,12 @@ Includes a Maven-plugin to generate content and automate building and publishing
 [Hugo](https://gohugo.io/) is one of the most popular open-source static site generators.
 With its amazing speed and flexibility, Hugo makes building websites fun again.
 
+### Apache Maven
+
+[Apache Maven](https://maven.apache.org/) is a software project management and comprehension tool.
+Based on the concept of a project object model (POM), Maven can manage a project's build,
+reporting and documentation from a central piece of information.
+
 ### Bootstrap
 
 [Bootstrap](https://getbootstrap.com/) is an open source toolkit for developing with HTML,
