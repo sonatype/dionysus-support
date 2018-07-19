@@ -74,6 +74,20 @@
     <module>hugo-theme</module>
   </modules>
 
+  <dependencyManagement>
+    <dependencies>
+
+      <!-- INTERNAL -->
+
+      <dependency>
+        <groupId>org.sonatype.goodies.dionysus</groupId>
+        <artifactId>dionysus-hugo-theme</artifactId>
+        <version>1-SNAPSHOT</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -203,6 +217,15 @@
             </excludes>
           </configuration>
         </plugin>
+
+        <!-- INTERNAL -->
+
+        <plugin>
+          <groupId>org.sonatype.goodies.dionysus</groupId>
+          <artifactId>dionysus-maven-plugin</artifactId>
+          <version>1-SNAPSHOT</version>
+        </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
@@ -216,7 +239,6 @@
             <plugin>
               <groupId>org.sonatype.goodies.dionysus</groupId>
               <artifactId>dionysus-maven-plugin</artifactId>
-              <version>1-SNAPSHOT</version>
               <configuration>
                 <theme>
                   <groupId>org.sonatype.goodies.dionysus</groupId>

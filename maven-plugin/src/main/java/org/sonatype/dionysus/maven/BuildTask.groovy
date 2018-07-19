@@ -55,6 +55,7 @@ class BuildTask
 
       log.info("Theme: $theme")
       if (theme != null) {
+        // TODO: consider resolving missing version from projects DM configuration?
         def coordinate = new DefaultArtifactCoordinate(
             groupId: theme.groupId,
             artifactId: theme.artifactId,
