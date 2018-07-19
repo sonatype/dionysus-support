@@ -70,7 +70,7 @@
   </ciManagement>
 
   <properties>
-    <dionysus.version>1.0.0-SNAPSHOT</dionysus.version>
+    <dionysus-support.version>1.0.0-SNAPSHOT</dionysus-support.version>
 
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -250,7 +250,7 @@
                 <theme>
                   <groupId>org.sonatype.goodies.dionysus</groupId>
                   <artifactId>dionysus-hugo-theme</artifactId>
-                  <version>${dionysus.version}</version>
+                  <version>${dionysus-support.version}</version>
                 </theme>
                 <mavenGoals>
                   <goal>javadoc:aggregate</goal>
