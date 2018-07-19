@@ -79,11 +79,13 @@ case "$command" in
         git tag $releaseTag
 
         # deploy release
-        mvn -Pbuildsupport-release clean deploy
+        mvn -Prelease clean deploy
 
         # update to next version
         self change-version "$nextVersion"
         git commit -a -m "update version: $nextVersion"
+
+        # TODO: push origin (branch + tag)
         ;;
 
     *)
