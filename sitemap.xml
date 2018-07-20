@@ -11,6 +11,10 @@
   </url>
   
   <url>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/development/</loc>
+  </url>
+  
+  <url>
     <loc>https://sonatype.github.io/dionysus-support/tags/dionysus-hugo-theme/</loc>
     <priority>0</priority>
   </url>
