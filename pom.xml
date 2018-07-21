@@ -99,12 +99,6 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.codehaus.gmaven</groupId>
-          <artifactId>groovy-maven-plugin</artifactId>
-          <version>2.1</version>
-        </plugin>
-
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
           <executions>
@@ -215,11 +209,18 @@
         </plugin>
 
         <plugin>
+          <groupId>com.github.eirslett</groupId>
+          <artifactId>frontend-maven-plugin</artifactId>
+          <version>1.6</version>
+        </plugin>
+
+        <plugin>
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
           <configuration>
             <excludes combine.children="append">
               <exclude>src/site/hugo/**</exclude>
+              <exclude>hugo-theme/frameworks/**</exclude>
               <exclude>hugo-theme/src/main/theme/**</exclude>
             </excludes>
           </configuration>
