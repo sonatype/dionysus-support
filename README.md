@@ -14,6 +14,10 @@
 -->
 # Dionysus Support
 
+![license](https://img.shields.io/github/license/sonatype/dionysus-support.svg)
+
+![maven-central](https://img.shields.io/maven-central/v/org.sonatype.goodies.dionysus/dionysus-support.svg)
+
 Support for using Dionysus [Hugo](https://gohugo.io) theme. 
 
 ## Requirements
