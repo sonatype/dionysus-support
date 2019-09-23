@@ -23,6 +23,8 @@
     "copycat-brunch": "1.1.1",
     "jquery": "3.4.0",
     "sass-brunch": "2.10.8",
-    "uglify-js-brunch": "2.10.0"
+    "uglify-js-brunch": "2.10.0",
+    "clean-css": "4.1.11",
+    "lodash": "4.17.13"
   }
 }
