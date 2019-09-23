@@ -13,7 +13,8 @@
   "dependencies": {
     "brunch": "2.10.17",
     "concurrently": "4.1.2",
-    "wait-on": "3.3.0"
+    "wait-on": "3.3.0",
+    "debug": "2.6.9"
   },
   "devDependencies": {}
 }
