@@ -4,7 +4,7 @@
 
 $enable-rounded: true;
 //noinspection CssUnknownTarget
-@import 'bootstrap';
+@import 'bootstrap/scss/bootstrap';
 
 //
 // Fontawesome
@@ -12,7 +12,13 @@ $enable-rounded: true;
 
 $fa-font-path: 'fonts';
 //noinspection CssUnknownTarget
-@import 'fontawesome', 'fa-regular', 'fa-solid', 'fa-brands';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+//noinspection CssUnknownTarget
+@import '@fortawesome/fontawesome-free/scss/regular';
+//noinspection CssUnknownTarget
+@import '@fortawesome/fontawesome-free/scss/solid';
+//noinspection CssUnknownTarget
+@import '@fortawesome/fontawesome-free/scss/brands';
 
 //
 // Site
@@ -26,3 +32,22 @@ $fa-font-path: 'fonts';
 @import 'search';
 @import 'maven';
 @import 'mavenplugin';
+
+//
+// Branding
+//
+
+.navbar-brand-app-name {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-transform: uppercase;
+  border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
+  padding-left: 12px;
+}
+
+.welcome-brand-app-name {
+  color: #8002ef;
+  text-transform: uppercase;
+  border-left: 3px solid black !important;
+  margin-left: 5px;
+  padding-left: 15px;
+}

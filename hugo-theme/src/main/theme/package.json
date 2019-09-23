@@ -7,22 +7,22 @@
     "build-dev": "brunch build"
   },
   "dependencies": {
-    "brunch": "^2.10.12",
-    "after-brunch": "^0.0.5",
-    "fuse.js": "^3.2.1",
-    "mark.js": "^8.11.1",
-    "popper.js": "^1.14.3"
+    "brunch": "2.10.17",
+    "after-brunch": "0.0.5",
+    "fuse.js": "3.4.5",
+    "mark.js": "8.11.1",
+    "popper.js": "1.15.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.1.0",
-    "auto-reload-brunch": "^2",
+    "@fortawesome/fontawesome-free": "5.11.1",
+    "auto-reload-brunch": "2.7.1",
     "babel-brunch": "~6.0",
     "babel-preset-env": "^1.7.0",
-    "bootstrap": "4",
-    "clean-css-brunch": "^2",
-    "copycat-brunch": "^1.1.0",
-    "jquery": "3",
-    "sass-brunch": "^2.10.4",
-    "uglify-js-brunch": "^2"
+    "bootstrap": "4.3.1",
+    "clean-css-brunch": "2.10.0",
+    "copycat-brunch": "1.1.1",
+    "jquery": "3.4.0",
+    "sass-brunch": "2.10.8",
+    "uglify-js-brunch": "2.10.0"
   }
 }
