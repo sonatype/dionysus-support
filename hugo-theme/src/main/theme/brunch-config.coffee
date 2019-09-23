@@ -22,8 +22,7 @@ module.exports =
       sass:
         options:
           includePaths: [
-            'node_modules/bootstrap/scss/',
-            'node_modules/@fortawesome/fontawesome-free/scss'
+            'node_modules'
           ]
           precision: 8
 
