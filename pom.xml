@@ -176,20 +176,6 @@
         </plugin>
 
         <plugin>
-          <groupId>com.sonatype.clm</groupId>
-          <artifactId>clm-maven-plugin</artifactId>
-          <version>2.8.1-01</version>
-          <executions>
-            <execution>
-              <phase>package</phase>
-              <goals>
-                <goal>index</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>3.0.1</version>
@@ -236,6 +222,22 @@
 
       </plugins>
     </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>com.sonatype.clm</groupId>
+        <artifactId>clm-maven-plugin</artifactId>
+        <version>2.8.1-01</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>index</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 
   <profiles>
