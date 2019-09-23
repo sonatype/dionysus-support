@@ -15,58 +15,11 @@
   </url>
   
   <url>
-    <loc>https://sonatype.github.io/dionysus-support/tags/dionysus-hugo-theme/</loc>
-    <priority>0</priority>
+    <loc>https://sonatype.github.io/dionysus-support/</loc>
   </url>
   
   <url>
     <loc>https://sonatype.github.io/dionysus-support/tags/dionysus-maven-plugin/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/categories/hugo/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/categories/hugo-theme/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/hugo-theme/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/license/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/categories/maven/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/categories/maven-plugin/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/search/</loc>
-    <priority>0.1</priority>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sonatype.github.io/dionysus-support/</loc>
   </url>
   
   <url>
@@ -87,6 +40,35 @@
   
   <url>
     <loc>https://sonatype.github.io/dionysus-support/maven-plugin/dionysus-publish/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sonatype.github.io/dionysus-support/hugo-theme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sonatype.github.io/dionysus-support/license/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sonatype.github.io/dionysus-support/categories/maven/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sonatype.github.io/dionysus-support/maven-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sonatype.github.io/dionysus-support/categories/maven-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sonatype.github.io/dionysus-support/search/</loc>
+    <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>https://sonatype.github.io/dionysus-support/tags/</loc>
   </url>
   
 </urlset>
