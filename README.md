@@ -37,8 +37,12 @@ To keep things simple for production and development, build will write files int
 
 ### Building
 
-    ./mvnw clean install && ./mvnw -Pdionysus dionysus:build
+    ./build site_build
     
 ### Publishing
 
-    ./mvnw -Pdionysus dionysus:publish
+    ./build site_build && ./build site_publish
+
+or more simply:
+
+    ./build site_deploy

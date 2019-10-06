@@ -29,5 +29,9 @@
     "debug": "2.6.9",
     "fstream": "1.0.12",
     "ws": "3.3.1"
+  },
+  "resolutions": {
+    "auto-reload-brunch/ws": "3.3.1",
+    "clean-css-brunch/clean-css": "4.1.11"
   }
 }
