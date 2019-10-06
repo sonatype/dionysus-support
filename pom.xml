@@ -28,7 +28,7 @@
   <name>${project.groupId}:${project.artifactId}</name>
   <packaging>pom</packaging>
 
-  <version>1.0.3</version>
+  <version>1.0.4-SNAPSHOT</version>
 
   <url>https://sonatype.github.io/dionysus-support/</url>
 
@@ -70,7 +70,7 @@
   </ciManagement>
 
   <properties>
-    <dionysus-support.version>1.0.3</dionysus-support.version>
+    <dionysus-support.version>1.0.4-SNAPSHOT</dionysus-support.version>
 
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -89,7 +89,7 @@
       <dependency>
         <groupId>org.sonatype.goodies.dionysus</groupId>
         <artifactId>dionysus-hugo-theme</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4-SNAPSHOT</version>
       </dependency>
 
     </dependencies>
@@ -217,7 +217,7 @@
         <plugin>
           <groupId>org.sonatype.goodies.dionysus</groupId>
           <artifactId>dionysus-maven-plugin</artifactId>
-          <version>1.0.3</version>
+          <version>1.0.4-SNAPSHOT</version>
         </plugin>
 
       </plugins>

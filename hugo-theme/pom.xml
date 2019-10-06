@@ -20,14 +20,14 @@
   <parent>
     <groupId>org.sonatype.goodies.dionysus</groupId>
     <artifactId>dionysus-support</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4-SNAPSHOT</version>
   </parent>
 
   <artifactId>dionysus-hugo-theme</artifactId>
   <name>${project.groupId}:${project.artifactId}</name>
   <packaging>pom</packaging>
 
-  <version>1.0.3</version>
+  <version>1.0.4-SNAPSHOT</version>
 
   <build>
     <plugins>
