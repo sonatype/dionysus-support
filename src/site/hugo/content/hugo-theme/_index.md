@@ -18,23 +18,5 @@ tags:
 ---
 
 {{% tag class="lead" %}}
-Hugo theme for Maven project sites.
+Hugo theme for Sonatype Maven project sites.
 {{% /tag %}}
-
-## Layouts
-
-TODO
-
-## Shortcodes
-
-TODO
-
-## Search
-
-TODO
-
-## Front-matter
-
-TODO
-
-## Features
