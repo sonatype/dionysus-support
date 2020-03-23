@@ -1,4 +1,4 @@
-@Library(['private-pipeline-library', 'jenkins-shared']) _
+@Library(['private-pipeline-library', 'jenkins-shared@CDI-243_repo-sonatype-com']) _
 
 mavenSnapshotPipeline(
   mavenVersion: 'Maven 3.3.x',
