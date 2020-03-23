@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.sonatype.buildsupport</groupId>
     <artifactId>public-parent</artifactId>
-    <version>15</version>
+    <version>18</version>
   </parent>
 
   <groupId>org.sonatype.goodies.dionysus</groupId>
@@ -197,7 +197,6 @@
         <plugin>
           <groupId>com.github.eirslett</groupId>
           <artifactId>frontend-maven-plugin</artifactId>
-          <version>1.6</version>
         </plugin>
 
         <plugin>
