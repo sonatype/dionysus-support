@@ -29,7 +29,7 @@
 
   <properties>
     <apache-maven.version>3.6.0</apache-maven.version>
-    <apache-ant.version>1.9.14</apache-ant.version>
+    <apache-ant.version>1.10.9</apache-ant.version>
     <jackson.version>2.9.10</jackson.version>
   </properties>
 
