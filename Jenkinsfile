@@ -59,7 +59,7 @@ pipeline {
 
     stage('Evaluate Policy') {
       steps {
-        nexusPolicyEvaluation iqApplication: 'goodies', iqStage: 'build',
+        nexusPolicyEvaluation iqApplication: 'dionysus-support', iqStage: 'build',
             // HACK: bogus path here to only scan indexed modules
             iqScanPatterns: [[scanPattern: 'no-such-path/*']]
       }
